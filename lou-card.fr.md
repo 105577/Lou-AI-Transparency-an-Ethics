@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.1.0 · 2026-10-28 · Statut : en développement, pas encore en service.**
+**Version 0.1.1 · 2026-10-28 · Statut : en développement, pas encore en service.**
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -20,7 +20,7 @@ Les données sont stockées sur des serveurs situés dans l'UE et sur les appare
 ## Données
 - Jamais conservé : les informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.).
 - Les contenus potentiellement sensibles sont scellés : chiffrés avec une clé que seule la personne propriétaire détient, Lou elle-même ne peut pas les lire.
-- Les enregistrements vocaux sont supprimés dans les 24 heures suivant leur transcription.
+- Lou ne garde aucune copie des enregistrements vocaux une fois transcrits.
 - Tout le monde est inclus par défaut et peut se retirer à tout moment, à l'un de ces trois niveaux :
   - **aucun contact** : Lou ne vous écrit jamais ;
   - **aucun contenu** : Lou sait seulement que vous avez écrit et quand, jamais quoi (aucune IA ne lit vos messages) ;

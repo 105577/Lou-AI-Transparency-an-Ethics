@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.1.0 · 2026-10-28 · Status: in development, not live yet.**
+**Version 0.1.1 · 2026-10-28 · Status: in development, not live yet.**
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -20,7 +20,7 @@ Data is stored on servers in the EU and on the owner's own devices. AI providers
 ## Data practices
 - Never stored: sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.).
 - Possibly sensitive content is sealed: encrypted with a key only the owner holds, so Lou itself can't read it.
-- Voice recordings are deleted within 24 hours of transcription.
+- Lou keeps no copy of voice recordings once they are transcribed.
 - Everyone is opted in by default and can opt out at any time, at one of three levels:
   - **no contact**: Lou never writes to you;
   - **no content**: Lou only knows that you wrote and when, never what (no AI reads your messages);
