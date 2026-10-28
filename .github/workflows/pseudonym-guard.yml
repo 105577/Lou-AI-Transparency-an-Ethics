@@ -1,0 +1,26 @@
+# Blocks any commit that contains personal information about the owner.
+# The deny-list is NOT stored in this public repo: it lives in the repository secret PSEUDONYM_DENYLIST
+# (one term per line: name variants, email, phone, city…). Set it in Settings → Secrets and variables → Actions.
+name: pseudonym-guard
+on: [push, pull_request]
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Scan files and commit metadata
+        env:
+          DENYLIST: ${{ secrets.PSEUDONYM_DENYLIST }}
+        run: |
+          if [ -z "$DENYLIST" ]; then echo "::error::PSEUDONYM_DENYLIST secret is not set"; exit 1; fi
+          printf '%s\n' "$DENYLIST" | sed '/^\s*$/d' > /tmp/deny.txt
+          fail=0
+          if grep -rniF --exclude-dir=.git -f /tmp/deny.txt . > /dev/null; then
+            echo "::error::A file contains a denied term (matches hidden on purpose)"; fail=1
+          fi
+          if git log --format='%an %ae %cn %ce %B' | grep -iqF -f /tmp/deny.txt; then
+            echo "::error::Commit metadata contains a denied term"; fail=1
+          fi
+          rm -f /tmp/deny.txt
+          exit $fail
