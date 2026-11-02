@@ -12,6 +12,7 @@ La façon dont une information est créée détermine la façon dont elle doit �
 | [Qui est Lou ?](about-lou.fr.md) | Ce qu'est Lou, comment les messages sont générés, vos choix |
 | [Principes](principles.fr.md) | Honnête, neutre, discrète, sûre, bienveillante, responsable |
 | [Fiche Lou](lou-card.fr.md) | Modèles, données, niveaux d'autonomie et de génération, version |
+| [Confidentialité](privacy-policy.fr.md) | Ce que Lou lit et conserve, où, combien de temps, qui y a accès, vos choix |
 | [Historique](CHANGELOG.md) | Chaque changement de modèle, de règle ou d'autonomie |
 
 La personne propriétaire de Lou n'apparaît ici que sous le pseudonyme **115**. Aucune information personnelle sur elle ou sur qui que ce soit n'est publiée dans ce dépôt.

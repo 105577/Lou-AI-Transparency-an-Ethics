@@ -3,7 +3,7 @@
 How a piece of information is created shapes how it should be interpreted. It is therefore as important as the information itself.
 This is why we select newspapers, why we trust some authors and not others, and why I believe you have the right to know how an information was created.
 
-This document guides you through the main aspects of Lou and its inner rules. If you want to know more, please reach out to **lou@…** asking for further
+This document guides you through the main aspects of Lou and its inner rules. If you want to know more, please reach out to **lou.kernel@gmail.com** asking for further
 context on how Lou works, and I'll personally get back to you.
 
 ## What Lou is

@@ -1,0 +1,93 @@
+# Privacy policy
+
+[Français](privacy-policy.fr.md) · Version 0.2.0 · 2026-11-02
+
+Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
+This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
+It describes Lou **as it works today**. Anything still being built is marked *(in progress)*. Every change is recorded in the [changelog](CHANGELOG.md).
+
+## Who is responsible
+
+The owner. Lou is a personal tool, not a company or a service offered to the public. It is not sold, carries no advertising, and does not
+build profiles of anyone for anyone else. The owner answers every request about your data personally (see [Your choices](#your-choices)).
+
+## What Lou reads
+
+Only what reaches the owner, with the owner's permission:
+
+- **The owner's conversations** on their messaging apps (for example WhatsApp, LinkedIn, Instagram, Messenger, iMessage), read through an app
+  running on the owner's own computer. Read-only, except for messages the owner has approved one by one.
+- **The owner's email**: for each email, the sender, recipients, date, subject, a short preview (about 200 characters) and its technical identifier.
+  **Lou does not download the full body of emails.**
+- **The owner's calendar**: event titles, times, places and the number of attendees.
+- **Messages sent to Lou's own WhatsApp number.** Only the owner's messages are processed. If anyone else writes to that number, Lou records
+  only that a message arrived and when, and never reads it.
+
+## What Lou keeps
+
+| What | Why | How it's kept |
+|------|-----|---------------|
+| Your name and how to reach you (phone number, email address, profile handle) as they appear in the owner's conversations | Recognise the same person across apps | Encrypted; looked up through a keyed fingerprint, never in clear |
+| The messages you exchange with the owner (for email: subject and preview only) | Remind the owner to answer, help prepare replies and meetings | Encrypted |
+| Messages Lou drafted, whether the owner approved them, and whether they were sent | Accountability: every message has a record | Encrypted, with a tamper-evident fingerprint |
+| An activity log: what happened and when (ids, times, statuses, costs) | Audits: anything Lou did can be traced | **Contains no message content.** Cannot be altered or deleted, even by Lou |
+
+**Never kept:**
+- notes or profiles containing sensitive information about you: health, political opinions, religion, sexual orientation, ethnic origin, and similar
+  *(the automatic filter for Lou's own notes is in progress; until it is live, Lou does not write notes about people)*;
+- voice recordings, once transcribed;
+- anything from people who chose the **no content** or **ignore** level (see below): their messages are dropped before they are stored.
+
+## Where it is kept, and who else sees it
+
+- **Storage:** on servers located in the **European Union**, and on the owner's own devices. Content is encrypted with keys held by the owner;
+  the hosting provider cannot read it.
+- **AI providers**, only for the excerpt needed for a given task, never your whole history:
+  - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts. Under its commercial terms, this data is not used
+    to train its models.
+  - **Mistral**, based in the **European Union**, for speech-to-text and small classification tasks *(in progress)*.
+- **The platforms the messages already go through:** WhatsApp (Meta) for Lou's own number, and Google for the owner's email and calendar,
+  accessed through their official interfaces with the owner's permission.
+
+Nothing is sold or shared for advertising. Nothing is published.
+
+## How long
+
+- Conversations and drafts: as long as they help the owner, and until you ask for them to be erased. A fixed maximum period will be set and announced
+  in the changelog *(in progress)*.
+- Voice recordings: deleted once transcribed.
+- The activity log: kept, because it is what makes Lou auditable. It holds no message content.
+
+## Messages Lou sends
+
+Lou writes to someone only when the owner asked for that message and approved the exact text. Each message is signed **"Lou"** (the first one links
+here), unless it is the owner's own words. You can ask how any message was written: see the [Lou card](lou-card.en.md).
+
+## Your choices
+
+Everyone starts at **full**. You can change your level at any time; it applies as soon as the owner receives your request, and it is checked by plain
+code before any AI is involved:
+
+| Level | Lou writes to you | Lou keeps your messages | An AI reads your messages |
+|-------|:---:|:---:|:---:|
+| **full** (default) | ✓ (approved by the owner) | ✓ encrypted | ✓ |
+| **no contact** | ✗ | ✓ encrypted | ✓ |
+| **no content** | ✗ | only that you wrote, and when | ✗ |
+| **ignore** | ✗ | ✗ | ✗ |
+
+You can also ask the owner to **see** what Lou holds about you, **correct** it, or **erase** it. Lowering your level erases what it no longer allows.
+
+**How to ask:** write to **lou.kernel@gmail.com**, reply to any message signed Lou, or tell the owner directly. The owner handles each request personally: opt-outs immediately, other
+requests within 30 days. *(Opt-outs and erasures are currently applied by the owner by hand; automating them is in progress.)*
+
+If you live in the EU, you also have the rights given by the GDPR, including complaining to your data protection authority.
+
+## Security
+
+Content encrypted at rest; a separate component, holding no AI access, is the only one able to send anything, and only messages the owner approved
+(checked by a cryptographic signature); every step is recorded in a log that cannot be changed. Details of the infrastructure are deliberately not
+published.
+
+## Changes
+
+This policy changes when Lou changes. Each version is listed in the [changelog](CHANGELOG.md), with what changed and why.

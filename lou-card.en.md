@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.1.1 · 2026-10-28 · Status: in development, not live yet.**
+**Version 0.2.0 · 2026-11-02 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -18,8 +18,9 @@ Today **every outgoing message or action is approved by its owner** before it ha
 Data is stored on servers in the EU and on the owner's own devices. AI providers receive only the excerpts needed for a given task.
 
 ## Data practices
-- Never stored: sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.).
-- Possibly sensitive content is sealed: encrypted with a key only the owner holds, so Lou itself can't read it.
+- Never kept: notes or profiles with sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.). Until the automatic filter is live, Lou writes no notes about people.
+- Possibly sensitive content is sealed: encrypted with a key only the owner holds, so Lou itself can't read it *(in progress)*.
+- Full details: [privacy policy](privacy-policy.en.md).
 - Lou keeps no copy of voice recordings once they are transcribed.
 - Everyone is opted in by default and can opt out at any time, at one of three levels:
   - **no contact**: Lou never writes to you;
@@ -42,4 +43,4 @@ Each message Lou prepares has a generation record, available on request:
 Messages at G2 and above are signed "Lou". G0–G1 messages are signed by the owner.
 
 ## Contact
-**lou@…** (the owner answers personally).
+**lou.kernel@gmail.com** (the owner answers personally).

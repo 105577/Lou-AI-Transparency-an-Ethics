@@ -4,7 +4,7 @@ La façon dont une information est créée détermine la façon dont elle doit �
 C'est pour cela que nous choisissons nos journaux, que nous faisons confiance à certains auteurs et pas à d'autres, et c'est pour cela que je pense que vous
 avez le droit de savoir comment une information a été créée.
 
-Ce document présente les principaux aspects de Lou et ses règles internes. Pour en savoir plus, écrivez à **lou@…** en demandant plus de contexte sur
+Ce document présente les principaux aspects de Lou et ses règles internes. Pour en savoir plus, écrivez à **lou.kernel@gmail.com** en demandant plus de contexte sur
 le fonctionnement de Lou, et je vous répondrai personnellement.
 
 ## Ce qu'est Lou

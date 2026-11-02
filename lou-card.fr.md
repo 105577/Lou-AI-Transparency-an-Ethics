@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.1.1 · 2026-10-28 · Statut : en développement, pas encore en service.**
+**Version 0.2.0 · 2026-11-02 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -18,8 +18,9 @@ Aujourd'hui, **chaque message ou action sortant est validé** par la personne qu
 Les données sont stockées sur des serveurs situés dans l'UE et sur les appareils de la personne propriétaire. Les fournisseurs d'IA ne reçoivent que les extraits nécessaires à chaque tâche.
 
 ## Données
-- Jamais conservé : les informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.).
-- Les contenus potentiellement sensibles sont scellés : chiffrés avec une clé que seule la personne propriétaire détient, Lou elle-même ne peut pas les lire.
+- Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Tant que le filtre automatique n'est pas actif, Lou ne rédige aucune note sur les personnes.
+- Les contenus potentiellement sensibles sont scellés : chiffrés avec une clé que seule la personne propriétaire détient, Lou elle-même ne peut pas les lire *(en cours)*.
+- Tous les détails : [politique de confidentialité](privacy-policy.fr.md).
 - Lou ne garde aucune copie des enregistrements vocaux une fois transcrits.
 - Tout le monde est inclus par défaut et peut se retirer à tout moment, à l'un de ces trois niveaux :
   - **aucun contact** : Lou ne vous écrit jamais ;
@@ -42,4 +43,4 @@ Chaque message préparé par Lou a une fiche de génération, disponible sur dem
 Les messages de niveau G2 et plus sont signés « Lou ». Les messages G0–G1 sont signés par la personne elle-même.
 
 ## Contact
-**lou@…** (réponse personnelle de la personne propriétaire).
+**lou.kernel@gmail.com** (réponse personnelle de la personne propriétaire).

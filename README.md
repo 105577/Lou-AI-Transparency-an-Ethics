@@ -12,6 +12,7 @@ How a piece of information is created shapes how it should be interpreted. You h
 | [Learn about Lou](about-lou.en.md) | What Lou is, how messages are generated, your choices |
 | [Principles](principles.en.md) | Honest, neutral, private, safe, kind, accountable |
 | [Lou card](lou-card.en.md) | Models, data practices, autonomy and generation levels, version |
+| [Privacy policy](privacy-policy.en.md) | What Lou reads and keeps, where, how long, who else sees it, your choices |
 | [Changelog](CHANGELOG.md) | Every change to models, rules or autonomy |
 
 Lou's owner appears here only under the pseudonym **115**. No personal information about the owner or anyone else is published in this repository.
