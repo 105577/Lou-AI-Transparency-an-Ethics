@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.0 · 2026-11-02
+[English](privacy-policy.en.md) · Version 0.2.1 · 2026-11-02
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -19,8 +19,8 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 
 - **Les conversations de la personne propriétaire** sur ses messageries (par exemple WhatsApp, LinkedIn, Instagram, Messenger, iMessage), lues par une application
   installée sur l'ordinateur de la personne propriétaire. En lecture seule, sauf pour les messages que la personne propriétaire a approuvés un par un.
-- **Les e-mails de la personne propriétaire** : pour chaque e-mail, l'expéditeur, les destinataires, la date, l'objet, un court aperçu (environ 200 caractères) et
-  son identifiant technique. **Lou ne télécharge pas le corps complet des e-mails.**
+- **Les e-mails de la personne propriétaire** : pour chaque e-mail, l'expéditeur, les destinataires, la date, l'objet, son texte et son identifiant technique.
+  **Les pièces jointes ne sont jamais ouvertes.**
 - **L'agenda de la personne propriétaire** : titres, horaires, lieux et nombre de participants des événements.
 - **Les messages envoyés au numéro WhatsApp de Lou.** Seuls ceux de la personne propriétaire sont traités. Si quelqu'un d'autre écrit à ce numéro, Lou enregistre
   seulement qu'un message est arrivé et quand, sans jamais le lire.
@@ -30,7 +30,7 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 | Quoi | Pourquoi | Comment |
 |------|----------|---------|
 | Votre nom et vos coordonnées (numéro, adresse e-mail, identifiant de profil) tels qu'ils apparaissent dans les conversations de la personne propriétaire | Reconnaître la même personne d'une application à l'autre | Chiffrés ; retrouvés grâce à une empreinte à clé, jamais en clair |
-| Les messages que vous échangez avec la personne propriétaire (pour les e-mails : objet et aperçu seulement) | Rappeler à la personne propriétaire de répondre, aider à préparer réponses et rendez-vous | Chiffrés |
+| Les messages que vous échangez avec la personne propriétaire (pour les e-mails : objet et texte, sans les pièces jointes) | Rappeler à la personne propriétaire de répondre, aider à préparer réponses et rendez-vous | Chiffrés |
 | Les messages rédigés par Lou, leur approbation par la personne propriétaire et leur envoi | Responsabilité : chaque message a une trace | Chiffrés, avec une empreinte qui révèle toute modification |
 | Un journal d'activité : ce qui s'est passé et quand (identifiants, horaires, statuts, coûts) | Audits : tout ce que Lou a fait peut être retracé | **Ne contient aucun contenu de message.** Ne peut être ni modifié ni effacé, pas même par Lou |
 

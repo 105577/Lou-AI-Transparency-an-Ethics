@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.0 · 2026-11-02
+[Français](privacy-policy.fr.md) · Version 0.2.1 · 2026-11-02
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -17,8 +17,8 @@ Only what reaches the owner, with the owner's permission:
 
 - **The owner's conversations** on their messaging apps (for example WhatsApp, LinkedIn, Instagram, Messenger, iMessage), read through an app
   running on the owner's own computer. Read-only, except for messages the owner has approved one by one.
-- **The owner's email**: for each email, the sender, recipients, date, subject, a short preview (about 200 characters) and its technical identifier.
-  **Lou does not download the full body of emails.**
+- **The owner's email**: for each email, the sender, recipients, date, subject, its text and its technical identifier.
+  **Attachments are never opened.**
 - **The owner's calendar**: event titles, times, places and the number of attendees.
 - **Messages sent to Lou's own WhatsApp number.** Only the owner's messages are processed. If anyone else writes to that number, Lou records
   only that a message arrived and when, and never reads it.
@@ -28,7 +28,7 @@ Only what reaches the owner, with the owner's permission:
 | What | Why | How it's kept |
 |------|-----|---------------|
 | Your name and how to reach you (phone number, email address, profile handle) as they appear in the owner's conversations | Recognise the same person across apps | Encrypted; looked up through a keyed fingerprint, never in clear |
-| The messages you exchange with the owner (for email: subject and preview only) | Remind the owner to answer, help prepare replies and meetings | Encrypted |
+| The messages you exchange with the owner (for email: subject and text, without attachments) | Remind the owner to answer, help prepare replies and meetings | Encrypted |
 | Messages Lou drafted, whether the owner approved them, and whether they were sent | Accountability: every message has a record | Encrypted, with a tamper-evident fingerprint |
 | An activity log: what happened and when (ids, times, statuses, costs) | Audits: anything Lou did can be traced | **Contains no message content.** Cannot be altered or deleted, even by Lou |
 

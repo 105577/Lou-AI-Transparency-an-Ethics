@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 · 2026-11-02
+- Email: Lou now keeps the text of the owner's emails (encrypted), not only the subject and a short preview, so replies answer what was actually
+  written. Attachments are never opened. People who opted out (no content, ignore) are unaffected: nothing of theirs is kept.
+- Autonomy: changes to the owner's own calendar that the owner asked for, on events with nobody else on them, are applied directly and confirmed
+  (level A3). Everything that reaches another person is still approved word for word; deleting an event or changing one with guests still needs approval.
+
 ## 0.2.0 · 2026-11-02
 - Lou is in early use by its owner. It reads the owner's messages (read-only), email (sender, subject and short preview, never the full body) and calendar.
 - Lou can now send messages and emails for its owner, **only after the owner approves the exact text**, each one signed (cryptographically checked in code).
