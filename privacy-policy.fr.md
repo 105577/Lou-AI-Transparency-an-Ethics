@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.1 · 2026-11-02
+[English](privacy-policy.en.md) · Version 0.2.2 · 2026-11-04
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -36,7 +36,10 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 
 **Jamais conservé :**
 - des notes ou profils contenant des informations sensibles sur vous : santé, opinions politiques, religion, orientation sexuelle, origine ethnique,
-  et informations similaires *(le filtre automatique des notes de Lou est en cours ; tant qu'il n'est pas actif, Lou ne rédige aucune note sur les personnes)* ;
+  et informations similaires (pour l'instant, Lou ne rédige aucune note sur les personnes) ;
+- **les détails sensibles de tes messages** : une vérification automatique, effectuée dans l'Union européenne, les retire avant que l'IA de Lou
+  ne lise un message (« je ne pourrai pas venir demain, [raison personnelle] ») et les efface de la copie enregistrée. Si la vérification ne peut
+  pas avoir lieu, le message est caché à Lou plutôt que lu ;
 - les enregistrements vocaux, une fois transcrits ;
 - quoi que ce soit venant des personnes ayant choisi le niveau **aucun contenu** ou **ignorer** (voir plus bas) : leurs messages sont écartés avant d'être enregistrés.
 
@@ -47,7 +50,10 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 - **Fournisseurs d'IA**, uniquement pour l'extrait nécessaire à une tâche donnée, jamais tout votre historique :
   - **Anthropic** (Claude), entreprise basée aux **États-Unis**, prépare les réponses et les brouillons. Selon ses conditions commerciales, ces données
     ne servent pas à entraîner ses modèles.
-  - **Mistral**, basée dans l'**Union européenne**, pour la transcription vocale et de petites tâches de classement *(en cours)*.
+  - **Mistral**, basée dans l'**Union européenne**, pour la vérification qui retire les détails sensibles des messages ; plus tard, la transcription vocale. Elle ne reçoit que les messages qu'un premier jeu de règles signale comme possiblement sensibles.
+- **Recherches sur le web :** pour des informations publiques et à jour (l'état d'un train, une entreprise, un lieu), Lou peut chercher sur le web
+  via son fournisseur d'IA. Ces recherches portent sur des sujets publics : Lou a pour consigne de ne jamais y mettre votre nom ou vos coordonnées,
+  et chaque recherche est enregistrée pour que la personne propriétaire puisse vérifier.
 - **Les plateformes par lesquelles les messages passent déjà :** WhatsApp (Meta) pour le numéro de Lou, et Google pour les e-mails et l'agenda de la
   personne propriétaire, consultés via leurs interfaces officielles avec son autorisation.
 
@@ -78,7 +84,8 @@ demande, et il est vérifié par du code simple, avant toute intervention d'une 
 | **aucun contenu** | ✗ | seulement que vous avez écrit, et quand | ✗ |
 | **ignorer** | ✗ | ✗ | ✗ |
 
-Vous pouvez aussi demander à la personne propriétaire de **consulter** ce que Lou détient sur vous, de le **corriger** ou de l'**effacer**. Baisser votre niveau
+La personne propriétaire peut aussi, de sa propre initiative, appliquer l'un de ces niveaux à quelqu'un, ou demander à Lou de ne jamais lire les
+e-mails d'un domaine donné (par exemple un cabinet médical). Vous pouvez aussi demander à la personne propriétaire de **consulter** ce que Lou détient sur vous, de le **corriger** ou de l'**effacer**. Baisser votre niveau
 efface ce qu'il ne permet plus.
 
 **Comment le demander :** écrivez à **lou.kernel@gmail.com**, répondez à n'importe quel message signé Lou, ou dites-le directement à la personne propriétaire. Elle traite chaque demande personnellement :

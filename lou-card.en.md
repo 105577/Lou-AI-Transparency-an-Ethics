@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.1 · 2026-11-02 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.2 · 2026-11-04 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -15,12 +15,13 @@ are applied directly and confirmed (level A3 below). Any change to this is annou
 | Role | Provider |
 |------|----------|
 | Conversation, drafting, planning | Anthropic (Claude) |
-| Speech-to-text, search indexing, small classification tasks | Mistral |
+| Privacy check on messages (removes sensitive details); later speech-to-text | Mistral |
 
 Data is stored on servers in the EU and on the owner's own devices. AI providers receive only the excerpts needed for a given task.
 
 ## Data practices
-- Never kept: notes or profiles with sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.). Until the automatic filter is live, Lou writes no notes about people.
+- Never kept: notes or profiles with sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.). Lou writes no notes about people for now.
+- Sensitive details about others are removed automatically before Lou's AI reads any message, and erased from what is stored.
 - Possibly sensitive content is sealed: encrypted with a key only the owner holds, so Lou itself can't read it *(in progress)*.
 - Full details: [privacy policy](privacy-policy.en.md).
 - Lou keeps no copy of voice recordings once they are transcribed.

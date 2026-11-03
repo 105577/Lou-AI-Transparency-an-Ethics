@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2 · 2026-11-04
+- Lou can search the web for public information (a train's status, a company, a place). Searches never contain anyone's personal details by rule,
+  and each one is recorded.
+- Sensitive details about others (health, beliefs, family matters…) are removed automatically before Lou's AI reads any message, and erased
+  from what is stored, including Lou's own replies. The check runs in the EU; when it can't run, the message is hidden from Lou instead.
+- The owner can set privacy levels for someone, or tell Lou never to read emails from a domain (for example a medical office): applied before anything is stored.
+
 ## 0.2.1 · 2026-11-02
 - Email: Lou now keeps the text of the owner's emails (encrypted), not only the subject and a short preview, so replies answer what was actually
   written. Attachments are never opened. People who opted out (no content, ignore) are unaffected: nothing of theirs is kept.

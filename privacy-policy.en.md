@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.1 · 2026-11-02
+[Français](privacy-policy.fr.md) · Version 0.2.2 · 2026-11-04
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -34,7 +34,10 @@ Only what reaches the owner, with the owner's permission:
 
 **Never kept:**
 - notes or profiles containing sensitive information about you: health, political opinions, religion, sexual orientation, ethnic origin, and similar
-  *(the automatic filter for Lou's own notes is in progress; until it is live, Lou does not write notes about people)*;
+  (Lou writes no notes about people for now);
+- **sensitive details in your messages**: an automatic check, run in the European Union, removes them before Lou's AI reads a message
+  ("can't make it tomorrow, [personal reason]") and erases them from the copy that is stored. When the check can't run, the message is hidden from
+  Lou rather than read;
 - voice recordings, once transcribed;
 - anything from people who chose the **no content** or **ignore** level (see below): their messages are dropped before they are stored.
 
@@ -45,7 +48,9 @@ Only what reaches the owner, with the owner's permission:
 - **AI providers**, only for the excerpt needed for a given task, never your whole history:
   - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts. Under its commercial terms, this data is not used
     to train its models.
-  - **Mistral**, based in the **European Union**, for speech-to-text and small classification tasks *(in progress)*.
+  - **Mistral**, based in the **European Union**, for the privacy check that removes sensitive details from messages; later, speech-to-text. It receives only the messages a first set of rules flags as possibly sensitive.
+- **Web searches:** for public, current information (a train's status, a company, a place), Lou can search the web through its AI provider.
+  Searches are about public things: Lou is instructed never to put your name or details in one, and every search is recorded so the owner can check.
 - **The platforms the messages already go through:** WhatsApp (Meta) for Lou's own number, and Google for the owner's email and calendar,
   accessed through their official interfaces with the owner's permission.
 
@@ -75,7 +80,8 @@ code before any AI is involved:
 | **no content** | ✗ | only that you wrote, and when | ✗ |
 | **ignore** | ✗ | ✗ | ✗ |
 
-You can also ask the owner to **see** what Lou holds about you, **correct** it, or **erase** it. Lowering your level erases what it no longer allows.
+The owner can also, on their own initiative, set any of these levels for someone, or tell Lou never to read emails from a given address domain
+(for example a medical office). You can also ask the owner to **see** what Lou holds about you, **correct** it, or **erase** it. Lowering your level erases what it no longer allows.
 
 **How to ask:** write to **lou.kernel@gmail.com**, reply to any message signed Lou, or tell the owner directly. The owner handles each request personally: opt-outs immediately, other
 requests within 30 days. *(Opt-outs and erasures are currently applied by the owner by hand; automating them is in progress.)*

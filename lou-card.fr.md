@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.1 · 2026-11-02 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.2 · 2026-11-04 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -15,12 +15,13 @@ autre participant, sont appliqués directement puis confirmés (niveau A3 ci-des
 | Rôle | Fournisseur |
 |------|-------------|
 | Conversation, rédaction, planification | Anthropic (Claude) |
-| Transcription vocale, indexation, petites tâches de classification | Mistral |
+| Vérification de confidentialité des messages (retire les détails sensibles) ; plus tard, transcription vocale | Mistral |
 
 Les données sont stockées sur des serveurs situés dans l'UE et sur les appareils de la personne propriétaire. Les fournisseurs d'IA ne reçoivent que les extraits nécessaires à chaque tâche.
 
 ## Données
-- Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Tant que le filtre automatique n'est pas actif, Lou ne rédige aucune note sur les personnes.
+- Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Pour l'instant, Lou ne rédige aucune note sur les personnes.
+- Les détails sensibles concernant les autres sont retirés automatiquement avant que l'IA de Lou ne lise un message, et effacés de ce qui est enregistré.
 - Les contenus potentiellement sensibles sont scellés : chiffrés avec une clé que seule la personne propriétaire détient, Lou elle-même ne peut pas les lire *(en cours)*.
 - Tous les détails : [politique de confidentialité](privacy-policy.fr.md).
 - Lou ne garde aucune copie des enregistrements vocaux une fois transcrits.
