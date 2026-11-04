@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.7 · 2026-11-04
+- Money details are now filtered like other sensitive information, the owner's included: account balances, amounts, bank or card numbers,
+  IBAN and salary are removed before Lou's AI reads a message and erased from what is stored, keeping only what is asked and by when.
+  What was already stored has been checked again.
+
 ## 0.2.6 · 2026-11-04
 - Living notes: Lou keeps a short note per conversation (where things stand, what each side still owes) so the owner doesn't have to re-read
   everything, and offers help when it can. Notes are written from messages with sensitive details already removed, checked again, never

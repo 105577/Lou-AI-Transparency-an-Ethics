@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.6 · 2026-11-04
+[Français](privacy-policy.fr.md) · Version 0.2.7 · 2026-11-04
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -38,7 +38,8 @@ Only what reaches the owner, with the owner's permission:
   (Lou's notes on conversations are checked so they never contain any);
 - **sensitive details in your messages**: an automatic check, run in the European Union, removes them before Lou's AI reads a message
   ("can't make it tomorrow, [personal reason]") and erases them from the copy that is stored. When the check can't run, the message is hidden from
-  Lou rather than read;
+  Lou rather than read. This includes **money details**, the owner's too: account balances, amounts, bank or card numbers, IBAN
+  and salary are replaced by "[financial detail]", keeping only what is asked and by when;
 - voice recordings, once transcribed;
 - anything from people who chose the **no content** or **ignore** level (see below): their messages are dropped before they are stored.
 

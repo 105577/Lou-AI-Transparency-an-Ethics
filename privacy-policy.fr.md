@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.6 · 2026-11-04
+[English](privacy-policy.en.md) · Version 0.2.7 · 2026-11-04
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -40,7 +40,9 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
   et informations similaires (les notes de Lou sur les conversations sont vérifiées pour n'en contenir aucune) ;
 - **les détails sensibles de vos messages** : une vérification automatique, effectuée dans l'Union européenne, les retire avant que l'IA de Lou
   ne lise un message (« je ne pourrai pas venir demain, [raison personnelle] ») et les efface de la copie enregistrée. Si la vérification ne peut
-  pas avoir lieu, le message est caché à Lou plutôt que lu ;
+  pas avoir lieu, le message est caché à Lou plutôt que lu. Cela inclut les **informations financières**, y compris celles de la
+  personne propriétaire : soldes, montants, numéros de compte ou de carte, IBAN et salaire sont remplacés par « [information financière] »,
+  en ne gardant que ce qui est demandé et pour quand ;
 - les enregistrements vocaux, une fois transcrits ;
 - quoi que ce soit venant des personnes ayant choisi le niveau **aucun contenu** ou **ignorer** (voir plus bas) : leurs messages sont écartés avant d'être enregistrés.
 
