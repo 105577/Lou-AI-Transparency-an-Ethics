@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3 · 2026-11-04
+- Retention: the text of messages, emails, drafts and the owner's chats with Lou is erased automatically after 12 months. A record without
+  content stays with the activity log, which is kept 3 years.
+
 ## 0.2.2 · 2026-11-04
 - Lou can search the web for public information (a train's status, a company, a place). Searches never contain anyone's personal details by rule,
   and each one is recorded.

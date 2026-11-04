@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.2 · 2026-11-04
+[English](privacy-policy.en.md) · Version 0.2.3 · 2026-11-04
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -37,7 +37,7 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 **Jamais conservé :**
 - des notes ou profils contenant des informations sensibles sur vous : santé, opinions politiques, religion, orientation sexuelle, origine ethnique,
   et informations similaires (pour l'instant, Lou ne rédige aucune note sur les personnes) ;
-- **les détails sensibles de tes messages** : une vérification automatique, effectuée dans l'Union européenne, les retire avant que l'IA de Lou
+- **les détails sensibles de vos messages** : une vérification automatique, effectuée dans l'Union européenne, les retire avant que l'IA de Lou
   ne lise un message (« je ne pourrai pas venir demain, [raison personnelle] ») et les efface de la copie enregistrée. Si la vérification ne peut
   pas avoir lieu, le message est caché à Lou plutôt que lu ;
 - les enregistrements vocaux, une fois transcrits ;
@@ -61,10 +61,11 @@ Rien n'est vendu ni partagé à des fins publicitaires. Rien n'est publié.
 
 ## Combien de temps
 
-- Conversations et brouillons : tant qu'ils sont utiles à la personne propriétaire, et jusqu'à ce que vous en demandiez l'effacement. Une durée maximale sera fixée
-  et annoncée dans l'historique *(en cours)*.
+- Messages, e-mails, brouillons et échanges de la personne propriétaire avec Lou : leur **texte est effacé automatiquement au bout de 12 mois**,
+  ou plus tôt si vous le demandez. Il reste un enregistrement sans contenu (qui a écrit, quand, si un message a été envoyé, et une empreinte
+  qui prouve ce qui a été envoyé sans permettre de le relire), conservé avec le journal d'activité.
 - Enregistrements vocaux : supprimés une fois transcrits.
-- Le journal d'activité : conservé, car c'est ce qui rend Lou vérifiable. Il ne contient aucun contenu de message.
+- Le journal d'activité : conservé **3 ans**, car c'est ce qui rend Lou vérifiable. Il ne contient aucun contenu de message.
 
 ## Les messages envoyés par Lou
 

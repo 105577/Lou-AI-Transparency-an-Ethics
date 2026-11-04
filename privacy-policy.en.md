@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.2 · 2026-11-04
+[Français](privacy-policy.fr.md) · Version 0.2.3 · 2026-11-04
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -58,10 +58,11 @@ Nothing is sold or shared for advertising. Nothing is published.
 
 ## How long
 
-- Conversations and drafts: as long as they help the owner, and until you ask for them to be erased. A fixed maximum period will be set and announced
-  in the changelog *(in progress)*.
+- Messages, emails, drafts and the owner's chats with Lou: their **text is erased automatically after 12 months**, or earlier if you ask.
+  What remains is a record without content (who wrote, when, whether a message was sent, and a fingerprint that proves what was sent
+  without allowing anyone to read it again), kept with the activity log.
 - Voice recordings: deleted once transcribed.
-- The activity log: kept, because it is what makes Lou auditable. It holds no message content.
+- The activity log: kept **3 years**, because it is what makes Lou auditable. It holds no message content.
 
 ## Messages Lou sends
 
