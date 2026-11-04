@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.3 · 2026-11-04
+[Français](privacy-policy.fr.md) · Version 0.2.4 · 2026-11-04
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -82,10 +82,12 @@ code before any AI is involved:
 | **ignore** | ✗ | ✗ | ✗ |
 
 The owner can also, on their own initiative, set any of these levels for someone, or tell Lou never to read emails from a given address domain
-(for example a medical office). You can also ask the owner to **see** what Lou holds about you, **correct** it, or **erase** it. Lowering your level erases what it no longer allows.
+(for example a medical office). You can also ask the owner to **see** what Lou holds about you, **correct** it, or **erase** it. Lowering your level erases what it no longer allows *(in progress: for now, ask for erasure as well)*.
 
 **How to ask:** write to **lou.kernel@gmail.com**, reply to any message signed Lou, or tell the owner directly. The owner handles each request personally: opt-outs immediately, other
-requests within 30 days. *(Opt-outs and erasures are currently applied by the owner by hand; automating them is in progress.)*
+requests within 30 days. Each request is registered with its deadline and followed until it is answered. An erasure is prepared by Lou
+and runs only once the owner has approved it; it removes the text of your messages, your name and your contact details, and keeps only a
+record that messages existed and when, with your contact details as unreadable fingerprints so that your choices keep applying.
 
 If you live in the EU, you also have the rights given by the GDPR, including complaining to your data protection authority.
 

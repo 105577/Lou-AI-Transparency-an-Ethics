@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.4 · 2026-11-04
+- Requests about your data (see, correct, erase, opt out) are registered with their deadline and followed until answered. An erasure is
+  prepared by Lou and runs only after the owner approves it; a record without content proves it was done.
+
 ## 0.2.3 · 2026-11-04
 - Retention: the text of messages, emails, drafts and the owner's chats with Lou is erased automatically after 12 months. A record without
   content stays with the activity log, which is kept 3 years.

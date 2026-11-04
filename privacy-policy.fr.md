@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.3 · 2026-11-04
+[English](privacy-policy.en.md) · Version 0.2.4 · 2026-11-04
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -87,11 +87,13 @@ demande, et il est vérifié par du code simple, avant toute intervention d'une 
 
 La personne propriétaire peut aussi, de sa propre initiative, appliquer l'un de ces niveaux à quelqu'un, ou demander à Lou de ne jamais lire les
 e-mails d'un domaine donné (par exemple un cabinet médical). Vous pouvez aussi demander à la personne propriétaire de **consulter** ce que Lou détient sur vous, de le **corriger** ou de l'**effacer**. Baisser votre niveau
-efface ce qu'il ne permet plus.
+efface ce qu'il ne permet plus *(en cours : pour l'instant, demandez aussi l'effacement)*.
 
 **Comment le demander :** écrivez à **lou.kernel@gmail.com**, répondez à n'importe quel message signé Lou, ou dites-le directement à la personne propriétaire. Elle traite chaque demande personnellement :
-les refus immédiatement, les autres demandes sous 30 jours. *(Les refus et effacements sont pour l'instant appliqués à la main par la personne propriétaire ;
-leur automatisation est en cours.)*
+les refus immédiatement, les autres demandes sous 30 jours. Chaque demande est enregistrée avec son échéance et suivie jusqu'à sa réponse.
+Un effacement est préparé par Lou et ne s'exécute qu'une fois approuvé par la personne propriétaire ; il supprime le texte de vos messages,
+votre nom et vos coordonnées, et ne garde qu'une trace : que des messages ont existé, et quand, avec vos coordonnées sous forme d'empreintes
+illisibles, pour que vos choix continuent de s'appliquer.
 
 Si vous résidez dans l'UE, vous disposez aussi des droits prévus par le RGPD, dont celui de saisir l'autorité de protection des données (en France, la CNIL).
 
