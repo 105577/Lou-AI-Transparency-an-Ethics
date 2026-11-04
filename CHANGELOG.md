@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.5 · 2026-11-04
+- Heads-ups: when someone asks for the owner's availability, agrees a time, sends an invitation or a deadline, Lou tells the owner (a few
+  times a day at most, never at night) and offers to prepare the answer, which the owner still approves. To understand what a message asks,
+  Lou uses a small AI model in the EU, on the message with sensitive details already removed.
+
 ## 0.2.4 · 2026-11-04
 - Requests about your data (see, correct, erase, opt out) are registered with their deadline and followed until answered. An erasure is
   prepared by Lou and runs only after the owner approves it; a record without content proves it was done.

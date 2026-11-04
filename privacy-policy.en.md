@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.4 · 2026-11-04
+[Français](privacy-policy.fr.md) · Version 0.2.5 · 2026-11-04
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -48,7 +48,9 @@ Only what reaches the owner, with the owner's permission:
 - **AI providers**, only for the excerpt needed for a given task, never your whole history:
   - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts. Under its commercial terms, this data is not used
     to train its models.
-  - **Mistral**, based in the **European Union**, for the privacy check that removes sensitive details from messages; later, speech-to-text. It receives only the messages a first set of rules flags as possibly sensitive.
+  - **Mistral**, based in the **European Union**, for the privacy check that removes sensitive details from messages, and to understand what a message asks of the owner (their
+    availability, a time agreed, a deadline) so Lou can give a heads-up; later, speech-to-text. It receives only messages a first set of rules
+    flags, after sensitive details are removed.
 - **Web searches:** for public, current information (a train's status, a company, a place), Lou can search the web through its AI provider.
   Searches are about public things: Lou is instructed never to put your name or details in one, and every search is recorded so the owner can check.
 - **The platforms the messages already go through:** WhatsApp (Meta) for Lou's own number, and Google for the owner's email and calendar,
