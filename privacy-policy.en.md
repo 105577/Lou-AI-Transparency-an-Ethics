@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.5 · 2026-11-04
+[Français](privacy-policy.fr.md) · Version 0.2.6 · 2026-11-04
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -29,12 +29,13 @@ Only what reaches the owner, with the owner's permission:
 |------|-----|---------------|
 | Your name and how to reach you (phone number, email address, profile handle) as they appear in the owner's conversations | Recognise the same person across apps | Encrypted; looked up through a keyed fingerprint, never in clear |
 | The messages you exchange with the owner (for email: subject and text, without attachments) | Remind the owner to answer, help prepare replies and meetings | Encrypted |
+| A short note per conversation: where things stand, what each side still owes | So the owner doesn't have to re-read everything, and Lou can offer help | Encrypted; written from messages with sensitive details already removed; the owner can correct it; erased with the messages |
 | Messages Lou drafted, whether the owner approved them, and whether they were sent | Accountability: every message has a record | Encrypted, with a tamper-evident fingerprint |
 | An activity log: what happened and when (ids, times, statuses, costs) | Audits: anything Lou did can be traced | **Contains no message content.** Cannot be altered or deleted, even by Lou |
 
 **Never kept:**
 - notes or profiles containing sensitive information about you: health, political opinions, religion, sexual orientation, ethnic origin, and similar
-  (Lou writes no notes about people for now);
+  (Lou's notes on conversations are checked so they never contain any);
 - **sensitive details in your messages**: an automatic check, run in the European Union, removes them before Lou's AI reads a message
   ("can't make it tomorrow, [personal reason]") and erases them from the copy that is stored. When the check can't run, the message is hidden from
   Lou rather than read;

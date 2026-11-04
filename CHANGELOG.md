@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.6 · 2026-11-04
+- Living notes: Lou keeps a short note per conversation (where things stand, what each side still owes) so the owner doesn't have to re-read
+  everything, and offers help when it can. Notes are written from messages with sensitive details already removed, checked again, never
+  carry instructions from anyone's message, can be corrected by the owner, and are erased with the messages (12 months, or on request).
+
 ## 0.2.5 · 2026-11-04
 - Heads-ups: when someone asks for the owner's availability, agrees a time, sends an invitation or a deadline, Lou tells the owner (a few
   times a day at most, never at night) and offers to prepare the answer, which the owner still approves. To understand what a message asks,

@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.5 · 2026-11-04
+[English](privacy-policy.en.md) · Version 0.2.6 · 2026-11-04
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -31,12 +31,13 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 |------|----------|---------|
 | Votre nom et vos coordonnées (numéro, adresse e-mail, identifiant de profil) tels qu'ils apparaissent dans les conversations de la personne propriétaire | Reconnaître la même personne d'une application à l'autre | Chiffrés ; retrouvés grâce à une empreinte à clé, jamais en clair |
 | Les messages que vous échangez avec la personne propriétaire (pour les e-mails : objet et texte, sans les pièces jointes) | Rappeler à la personne propriétaire de répondre, aider à préparer réponses et rendez-vous | Chiffrés |
+| Une courte note par conversation : où en sont les choses, ce que chacun doit encore | Éviter à la personne propriétaire de tout relire, et permettre à Lou de proposer son aide | Chiffrée ; rédigée à partir de messages déjà débarrassés des détails sensibles ; corrigeable par la personne propriétaire ; effacée avec les messages |
 | Les messages rédigés par Lou, leur approbation par la personne propriétaire et leur envoi | Responsabilité : chaque message a une trace | Chiffrés, avec une empreinte qui révèle toute modification |
 | Un journal d'activité : ce qui s'est passé et quand (identifiants, horaires, statuts, coûts) | Audits : tout ce que Lou a fait peut être retracé | **Ne contient aucun contenu de message.** Ne peut être ni modifié ni effacé, pas même par Lou |
 
 **Jamais conservé :**
 - des notes ou profils contenant des informations sensibles sur vous : santé, opinions politiques, religion, orientation sexuelle, origine ethnique,
-  et informations similaires (pour l'instant, Lou ne rédige aucune note sur les personnes) ;
+  et informations similaires (les notes de Lou sur les conversations sont vérifiées pour n'en contenir aucune) ;
 - **les détails sensibles de vos messages** : une vérification automatique, effectuée dans l'Union européenne, les retire avant que l'IA de Lou
   ne lise un message (« je ne pourrai pas venir demain, [raison personnelle] ») et les efface de la copie enregistrée. Si la vérification ne peut
   pas avoir lieu, le message est caché à Lou plutôt que lu ;
