@@ -4,6 +4,9 @@
 - Search: the owner can find anything Lou keeps by asking, by words or by meaning. The index is built only from text with sensitive
   details removed: words are stored as keyed fingerprints (never as words), and "meaning" vectors, made by a small model in the EU,
   are stored encrypted. Nothing from people who opted out is indexed, and the index is erased with the content.
+- Knowledge: Lou keeps short facts it learns (about people and the owner), each with its source and never sensitive, and follows what
+  it raised with the owner like a case, from raised to closed with the owner's reason, so it doesn't raise the same thing twice. Facts
+  learned from someone's messages are shown to the owner, who can correct or remove them; they're erased after 12 months, or on request.
 - Events: Lou now keeps an event's description (with sensitive details removed when read), its video link and who is invited, so it
   can help the owner prepare a meeting.
 
