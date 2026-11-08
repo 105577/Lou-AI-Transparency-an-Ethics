@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.8 · 2026-11-08
+- Search: the owner can find anything Lou keeps by asking, by words or by meaning. The index is built only from text with sensitive
+  details removed: words are stored as keyed fingerprints (never as words), and "meaning" vectors, made by a small model in the EU,
+  are stored encrypted. Nothing from people who opted out is indexed, and the index is erased with the content.
+- Events: Lou now keeps an event's description (with sensitive details removed when read), its video link and who is invited, so it
+  can help the owner prepare a meeting.
+
 ## 0.2.7 · 2026-11-04
 - Money details are now filtered like other sensitive information, the owner's included: account balances, amounts, bank or card numbers,
   IBAN and salary are removed before Lou's AI reads a message and erased from what is stored, keeping only what is asked and by when.

@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.7 · 2026-11-04
+[English](privacy-policy.en.md) · Version 0.2.8 · 2026-11-08
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -32,6 +32,7 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 | Votre nom et vos coordonnées (numéro, adresse e-mail, identifiant de profil) tels qu'ils apparaissent dans les conversations de la personne propriétaire | Reconnaître la même personne d'une application à l'autre | Chiffrés ; retrouvés grâce à une empreinte à clé, jamais en clair |
 | Les messages que vous échangez avec la personne propriétaire (pour les e-mails : objet et texte, sans les pièces jointes) | Rappeler à la personne propriétaire de répondre, aider à préparer réponses et rendez-vous | Chiffrés |
 | Une courte note par conversation : où en sont les choses, ce que chacun doit encore | Éviter à la personne propriétaire de tout relire, et permettre à Lou de proposer son aide | Chiffrée ; rédigée à partir de messages déjà débarrassés des détails sensibles ; corrigeable par la personne propriétaire ; effacée avec les messages |
+| Un index de recherche de ce que Lou conserve : des empreintes de mots et des vecteurs de « sens » | Permettre à la personne propriétaire de tout retrouver en demandant (« qu'a dit Clara sur la présentation ? ») | Construit uniquement à partir de textes débarrassés des détails sensibles ; les mots sont enregistrés sous forme d'empreintes à clé, jamais en clair ; vecteurs chiffrés ; rien des personnes qui ont refusé ; effacé avec le contenu |
 | Les messages rédigés par Lou, leur approbation par la personne propriétaire et leur envoi | Responsabilité : chaque message a une trace | Chiffrés, avec une empreinte qui révèle toute modification |
 | Un journal d'activité : ce qui s'est passé et quand (identifiants, horaires, statuts, coûts) | Audits : tout ce que Lou a fait peut être retracé | **Ne contient aucun contenu de message.** Ne peut être ni modifié ni effacé, pas même par Lou |
 
@@ -54,8 +55,9 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
   - **Anthropic** (Claude), entreprise basée aux **États-Unis**, prépare les réponses et les brouillons. Selon ses conditions commerciales, ces données
     ne servent pas à entraîner ses modèles.
   - **Mistral**, basée dans l'**Union européenne**, pour la vérification qui retire les détails sensibles des messages, et pour comprendre ce qu'un message attend de la personne
-    propriétaire (ses disponibilités, une heure convenue, une échéance) afin que Lou la prévienne ; plus tard, la transcription vocale. Elle ne
-    reçoit que les messages qu'un premier jeu de règles signale, une fois les détails sensibles retirés.
+    propriétaire (ses disponibilités, une heure convenue, une échéance) afin que Lou la prévienne ; et pour que la recherche de Lou comprenne
+    le sens (« l'appartement » trouve aussi « l'appart ») ; plus tard, la transcription vocale. Elle ne reçoit jamais que des textes déjà
+    débarrassés des détails sensibles ; pour la vérification de confidentialité, seulement les messages qu'un premier jeu de règles signale.
 - **Recherches sur le web :** pour des informations publiques et à jour (l'état d'un train, une entreprise, un lieu), Lou peut chercher sur le web
   via son fournisseur d'IA. Ces recherches portent sur des sujets publics : Lou a pour consigne de ne jamais y mettre votre nom ou vos coordonnées,
   et chaque recherche est enregistrée pour que la personne propriétaire puisse vérifier.

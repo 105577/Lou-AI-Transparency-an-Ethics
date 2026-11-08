@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.7 · 2026-11-04
+[Français](privacy-policy.fr.md) · Version 0.2.8 · 2026-11-08
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -30,6 +30,7 @@ Only what reaches the owner, with the owner's permission:
 | Your name and how to reach you (phone number, email address, profile handle) as they appear in the owner's conversations | Recognise the same person across apps | Encrypted; looked up through a keyed fingerprint, never in clear |
 | The messages you exchange with the owner (for email: subject and text, without attachments) | Remind the owner to answer, help prepare replies and meetings | Encrypted |
 | A short note per conversation: where things stand, what each side still owes | So the owner doesn't have to re-read everything, and Lou can offer help | Encrypted; written from messages with sensitive details already removed; the owner can correct it; erased with the messages |
+| A search index of what Lou keeps: fingerprints of words, and "meaning" vectors | So the owner can find anything by asking ("what did Clara say about the deck?") | Built only from text with sensitive details removed; words stored as keyed fingerprints, never as words; vectors encrypted; nothing from people who opted out; erased with the content |
 | Messages Lou drafted, whether the owner approved them, and whether they were sent | Accountability: every message has a record | Encrypted, with a tamper-evident fingerprint |
 | An activity log: what happened and when (ids, times, statuses, costs) | Audits: anything Lou did can be traced | **Contains no message content.** Cannot be altered or deleted, even by Lou |
 
@@ -51,8 +52,9 @@ Only what reaches the owner, with the owner's permission:
   - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts. Under its commercial terms, this data is not used
     to train its models.
   - **Mistral**, based in the **European Union**, for the privacy check that removes sensitive details from messages, and to understand what a message asks of the owner (their
-    availability, a time agreed, a deadline) so Lou can give a heads-up; later, speech-to-text. It receives only messages a first set of rules
-    flags, after sensitive details are removed.
+    availability, a time agreed, a deadline) so Lou can give a heads-up; and to make Lou's search understand meaning ("the apartment" also
+    finds "the flat"); later, speech-to-text. It only ever receives text with sensitive details already removed: for the privacy check,
+    only messages a first set of rules flags.
 - **Web searches:** for public, current information (a train's status, a company, a place), Lou can search the web through its AI provider.
   Searches are about public things: Lou is instructed never to put your name or details in one, and every search is recorded so the owner can check.
 - **The platforms the messages already go through:** WhatsApp (Meta) for Lou's own number, and Google for the owner's email and calendar,

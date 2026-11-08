@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.7 · 2026-11-04 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.8 · 2026-11-08 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
