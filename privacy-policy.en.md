@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.8 · 2026-11-08
+[Français](privacy-policy.fr.md) · Version 0.2.9 · 2026-11-08
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -30,6 +30,7 @@ Only what reaches the owner, with the owner's permission:
 | Your name and how to reach you (phone number, email address, profile handle) as they appear in the owner's conversations | Recognise the same person across apps | Encrypted; looked up through a keyed fingerprint, never in clear |
 | The messages you exchange with the owner (for email: subject and text, without attachments) | Remind the owner to answer, help prepare replies and meetings | Encrypted |
 | A short note per conversation: where things stand, what each side still owes | So the owner doesn't have to re-read everything, and Lou can offer help | Encrypted; written from messages with sensitive details already removed; the owner can correct it; erased with the messages |
+| A contact card about you: your name and nicknames, birthday, how you relate to the owner and how close you are, your work, how you met, a one-line description, and the latest context | So Lou knows who you are when you write, without searching | Encrypted; how you relate to the owner, how close you are, and relationships between people come only from the owner, never guessed; never sensitive information; erased with your data on request |
 | Short facts Lou learns, about you or the owner (where you work, a preference, a plan), each with where it came from; and what Lou raised with the owner and how it ended | So Lou remembers what matters and doesn't raise the same thing twice | Encrypted; never sensitive information; facts learned from your messages are listed to the owner, who can correct or remove them; erased after 12 months, or with your data on request |
 | A search index of what Lou keeps: fingerprints of words, and "meaning" vectors | So the owner can find anything by asking ("what did Clara say about the deck?") | Built only from text with sensitive details removed; words stored as keyed fingerprints, never as words; vectors encrypted; nothing from people who opted out; erased with the content |
 | Messages Lou drafted, whether the owner approved them, and whether they were sent | Accountability: every message has a record | Encrypted, with a tamper-evident fingerprint |

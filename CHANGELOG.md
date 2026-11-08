@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.9 · 2026-11-08
+- Contact cards: Lou keeps a short card per person (name, birthday, how they relate to the owner, the latest context) so it knows who
+  is writing without searching. Relationships and closeness come only from the owner, never guessed; nothing sensitive; erased on request.
+- Lou asks the owner when it lacks context (who someone is, what a meeting is about), a few questions a day at most.
+- Once a day, Lou looks over the owner's open threads to catch what could be forgotten (a reply still awaited, a birthday coming), with
+  read-only access: it can't send or change anything in that review. Heads-ups are rarer: only what the owner would thank Lou for.
+
 ## 0.2.8 · 2026-11-08
 - Search: the owner can find anything Lou keeps by asking, by words or by meaning. The index is built only from text with sensitive
   details removed: words are stored as keyed fingerprints (never as words), and "meaning" vectors, made by a small model in the EU,

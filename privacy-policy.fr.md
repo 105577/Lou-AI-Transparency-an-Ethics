@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.8 · 2026-11-08
+[English](privacy-policy.en.md) · Version 0.2.9 · 2026-11-08
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -32,6 +32,7 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 | Votre nom et vos coordonnées (numéro, adresse e-mail, identifiant de profil) tels qu'ils apparaissent dans les conversations de la personne propriétaire | Reconnaître la même personne d'une application à l'autre | Chiffrés ; retrouvés grâce à une empreinte à clé, jamais en clair |
 | Les messages que vous échangez avec la personne propriétaire (pour les e-mails : objet et texte, sans les pièces jointes) | Rappeler à la personne propriétaire de répondre, aider à préparer réponses et rendez-vous | Chiffrés |
 | Une courte note par conversation : où en sont les choses, ce que chacun doit encore | Éviter à la personne propriétaire de tout relire, et permettre à Lou de proposer son aide | Chiffrée ; rédigée à partir de messages déjà débarrassés des détails sensibles ; corrigeable par la personne propriétaire ; effacée avec les messages |
+| Une fiche contact à votre sujet : votre nom et vos surnoms, votre anniversaire, votre lien avec la personne propriétaire et votre degré de proximité, votre travail, comment vous vous êtes rencontrés, une description en une ligne, et le contexte récent | Que Lou sache qui vous êtes quand vous écrivez, sans avoir à chercher | Chiffrée ; votre lien avec la personne propriétaire, votre degré de proximité et les liens entre personnes ne viennent que de la personne propriétaire, jamais devinés ; jamais d'informations sensibles ; effacée avec vos données sur demande |
 | De courts faits que Lou apprend, sur vous ou sur la personne propriétaire (où vous travaillez, une préférence, un projet), chacun avec sa source ; et ce que Lou a signalé à la personne propriétaire et comment cela s'est terminé | Que Lou se souvienne de ce qui compte et ne signale pas deux fois la même chose | Chiffrés ; jamais d'informations sensibles ; les faits appris de vos messages sont listés à la personne propriétaire, qui peut les corriger ou les retirer ; effacés au bout de 12 mois, ou avec vos données sur demande |
 | Un index de recherche de ce que Lou conserve : des empreintes de mots et des vecteurs de « sens » | Permettre à la personne propriétaire de tout retrouver en demandant (« qu'a dit Clara sur la présentation ? ») | Construit uniquement à partir de textes débarrassés des détails sensibles ; les mots sont enregistrés sous forme d'empreintes à clé, jamais en clair ; vecteurs chiffrés ; rien des personnes qui ont refusé ; effacé avec le contenu |
 | Les messages rédigés par Lou, leur approbation par la personne propriétaire et leur envoi | Responsabilité : chaque message a une trace | Chiffrés, avec une empreinte qui révèle toute modification |

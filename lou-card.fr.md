@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.8 · 2026-11-08 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.9 · 2026-11-08 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -22,6 +22,7 @@ Les données sont stockées sur des serveurs situés dans l'UE et sur les appare
 ## Données
 - Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Lou garde une courte note par conversation (où en sont les choses, ce qui reste à faire), rédigée à partir de messages déjà débarrassés des détails sensibles, puis vérifiée à nouveau.
 - Les détails sensibles concernant les autres sont retirés automatiquement avant que l'IA de Lou ne lise un message, et effacés de ce qui est enregistré. Les informations financières (soldes, montants, numéros de compte) sont traitées de la même façon, y compris celles de la personne propriétaire.
+- Lou garde une courte fiche contact par personne (nom, anniversaire, lien avec la personne propriétaire, contexte récent). Les liens avec la personne propriétaire et entre les personnes ne viennent que d'elle, jamais devinés.
 - Les contenus potentiellement sensibles sont scellés : chiffrés avec une clé que seule la personne propriétaire détient, Lou elle-même ne peut pas les lire *(en cours)*.
 - Tous les détails : [politique de confidentialité](privacy-policy.fr.md).
 - Lou ne garde aucune copie des enregistrements vocaux une fois transcrits.
