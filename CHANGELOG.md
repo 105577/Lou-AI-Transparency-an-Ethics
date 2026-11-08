@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.10 · 2026-11-08
+- Organisations and topics: Lou groups what it knows by organisation, recognised by the domain of its email addresses (never a free
+  mailbox like Gmail), and by topic, once it comes up in more than one conversation. A new email, even from another address of the same
+  organisation, comes with its history: what was raised before and what the owner did about it.
+- Preferences: the owner can tell Lou how they like things (style, priorities), everywhere or for one person, organisation or topic. A
+  preference can never give Lou a permission: approvals, who Lou may contact, privacy and limits change only in Lou's code, reviewed,
+  and Lou refuses such requests whoever makes them. Preferences come only from the owner, never from anyone else's messages.
+- One log of every change to what Lou knows, encrypted and impossible to rewrite, so each change can be explained and undone.
+
 ## 0.2.9 · 2026-11-08
 - Contact cards: Lou keeps a short card per person (name, birthday, how they relate to the owner, the latest context) so it knows who
   is writing without searching. Relationships and closeness come only from the owner, never guessed; nothing sensitive; erased on request.
