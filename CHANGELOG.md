@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.12 · 2026-11-09
+- Backups: once a week, Lou makes an encrypted copy of its database, kept on the owner's own devices, so a failure or a mistake can't
+  wipe what Lou knows. The last 8 copies are kept (about two months). They're encrypted before they're written, with a key only the
+  owner holds, and the status warns the owner if no backup was made for more than 8 days.
+- What this means for erasure: when you ask for your data to be erased, it's erased from Lou at once, and it disappears from the
+  backups as they're replaced, within 8 weeks at most. A backup is only ever used to restore Lou after a failure.
+- Heads-ups are steadier: dates, and whether the owner has to act, are checked by code rather than left to the AI's wording.
+
 ## 0.2.11 · 2026-11-09
 - Heads-ups, rethought: Lou now reads each conversation once, when it has moved and gone quiet, instead of each message on its own. One
   call to the small AI model in the EU writes the conversation's note and says what it asks of the owner, by when and how much is at

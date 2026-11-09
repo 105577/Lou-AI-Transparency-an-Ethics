@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.11 · 2026-11-09
+[English](privacy-policy.en.md) · Version 0.2.12 · 2026-11-09
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -79,6 +79,9 @@ Rien n'est vendu ni partagé à des fins publicitaires. Rien n'est publié.
   qui prouve ce qui a été envoyé sans permettre de le relire), conservé avec le journal d'activité.
 - Enregistrements vocaux : supprimés une fois transcrits.
 - Le journal d'activité : conservé **3 ans**, car c'est ce qui rend Lou vérifiable. Il ne contient aucun contenu de message.
+- Sauvegardes : une copie chiffrée de la base de données de Lou chaque semaine, sur les appareils de la personne propriétaire ; les
+  **8 dernières semaines** sont conservées. Ce qui est effacé (sur demande ou au bout de 12 mois) disparaît des sauvegardes à mesure
+  qu'elles sont remplacées, en 8 semaines au plus. Les sauvegardes ne servent qu'à restaurer Lou après une panne.
 
 ## Les messages envoyés par Lou
 
