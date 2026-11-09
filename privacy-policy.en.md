@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.10 · 2026-11-08
+[Français](privacy-policy.fr.md) · Version 0.2.11 · 2026-11-09
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -56,8 +56,9 @@ Only what reaches the owner, with the owner's permission:
 - **AI providers**, only for the excerpt needed for a given task, never your whole history:
   - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts. Under its commercial terms, this data is not used
     to train its models.
-  - **Mistral**, based in the **European Union**, for the privacy check that removes sensitive details from messages, and to understand what a message asks of the owner (their
-    availability, a time agreed, a deadline) so Lou can give a heads-up; and to make Lou's search understand meaning ("the apartment" also
+  - **Mistral**, based in the **European Union**, for the privacy check that removes sensitive details from messages, and to understand each conversation once it has moved
+    (a short note on where things stand, what it asks of the owner, by when, and whether to tell them now), with the owner's calendar
+    for the next 7 days and their free slots as context; and to make Lou's search understand meaning ("the apartment" also
     finds "the flat"); later, speech-to-text. It only ever receives text with sensitive details already removed: for the privacy check,
     only messages a first set of rules flags.
 - **Web searches:** for public, current information (a train's status, a company, a place), Lou can search the web through its AI provider.
@@ -95,7 +96,8 @@ code before any AI is involved:
 The owner can also, on their own initiative, set any of these levels for someone, or tell Lou never to read emails from a given address domain
 (for example a medical office). You can also ask the owner to **see** what Lou holds about you, **correct** it, or **erase** it. Lowering your level erases what it no longer allows *(in progress: for now, ask for erasure as well)*.
 
-**How to ask:** write to **lou.kernel@gmail.com**, reply to any message signed Lou, or tell the owner directly. The owner handles each request personally: opt-outs immediately, other
+**How to ask:** write to **lou.kernel@gmail.com**, reply to any message signed Lou, or tell the owner directly. If you ask the owner in a message not to be contacted by Lou or not to have an AI read your messages, Lou registers
+it as a request and tells the owner at once. The owner handles each request personally: opt-outs immediately, other
 requests within 30 days. Each request is registered with its deadline and followed until it is answered. An erasure is prepared by Lou
 and runs only once the owner has approved it; it removes the text of your messages, your name and your contact details, and keeps only a
 record that messages existed and when, with your contact details as unreadable fingerprints so that your choices keep applying.

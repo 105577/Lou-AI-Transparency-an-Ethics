@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.10 · 2026-11-08 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.11 · 2026-11-09 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -15,7 +15,7 @@ are applied directly and confirmed (level A3 below). Any change to this is annou
 | Role | Provider |
 |------|----------|
 | Conversation, drafting, planning | Anthropic (Claude) |
-| Privacy check on messages (removes sensitive details), understanding what a message asks (for heads-ups); later speech-to-text | Mistral |
+| Privacy check on messages (removes sensitive details), understanding each conversation once (its note, what it asks, whether to tell the owner now; with the owner's calendar for 7 days as context); later speech-to-text | Mistral |
 
 Data is stored on servers in the EU and on the owner's own devices. AI providers receive only the excerpts needed for a given task.
 

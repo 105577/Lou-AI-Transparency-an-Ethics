@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.10 · 2026-11-08
+[English](privacy-policy.en.md) · Version 0.2.11 · 2026-11-09
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -59,8 +59,9 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 - **Fournisseurs d'IA**, uniquement pour l'extrait nécessaire à une tâche donnée, jamais tout votre historique :
   - **Anthropic** (Claude), entreprise basée aux **États-Unis**, prépare les réponses et les brouillons. Selon ses conditions commerciales, ces données
     ne servent pas à entraîner ses modèles.
-  - **Mistral**, basée dans l'**Union européenne**, pour la vérification qui retire les détails sensibles des messages, et pour comprendre ce qu'un message attend de la personne
-    propriétaire (ses disponibilités, une heure convenue, une échéance) afin que Lou la prévienne ; et pour que la recherche de Lou comprenne
+  - **Mistral**, basée dans l'**Union européenne**, pour la vérification qui retire les détails sensibles des messages, et pour comprendre chaque conversation quand elle a avancé
+    (une courte note sur où en sont les choses, ce qu'elle attend de la personne propriétaire, pour quand, et s'il faut la prévenir tout
+    de suite), avec pour contexte l'agenda de la personne propriétaire sur les 7 prochains jours et ses créneaux libres ; et pour que la recherche de Lou comprenne
     le sens (« l'appartement » trouve aussi « l'appart ») ; plus tard, la transcription vocale. Elle ne reçoit jamais que des textes déjà
     débarrassés des détails sensibles ; pour la vérification de confidentialité, seulement les messages qu'un premier jeu de règles signale.
 - **Recherches sur le web :** pour des informations publiques et à jour (l'état d'un train, une entreprise, un lieu), Lou peut chercher sur le web
@@ -101,7 +102,7 @@ La personne propriétaire peut aussi, de sa propre initiative, appliquer l'un de
 e-mails d'un domaine donné (par exemple un cabinet médical). Vous pouvez aussi demander à la personne propriétaire de **consulter** ce que Lou détient sur vous, de le **corriger** ou de l'**effacer**. Baisser votre niveau
 efface ce qu'il ne permet plus *(en cours : pour l'instant, demandez aussi l'effacement)*.
 
-**Comment le demander :** écrivez à **lou.kernel@gmail.com**, répondez à n'importe quel message signé Lou, ou dites-le directement à la personne propriétaire. Elle traite chaque demande personnellement :
+**Comment le demander :** écrivez à **lou.kernel@gmail.com**, répondez à n'importe quel message signé Lou, ou dites-le directement à la personne propriétaire. Si vous demandez dans un message à ne plus être contacté par Lou ou à ce qu'aucune IA ne lise vos messages, Lou l'enregistre comme une demande et prévient aussitôt la personne propriétaire. Elle traite chaque demande personnellement :
 les refus immédiatement, les autres demandes sous 30 jours. Chaque demande est enregistrée avec son échéance et suivie jusqu'à sa réponse.
 Un effacement est préparé par Lou et ne s'exécute qu'une fois approuvé par la personne propriétaire ; il supprime le texte de vos messages,
 votre nom et vos coordonnées, et ne garde qu'une trace : que des messages ont existé, et quand, avec vos coordonnées sous forme d'empreintes

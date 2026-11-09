@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.11 · 2026-11-09
+- Heads-ups, rethought: Lou now reads each conversation once, when it has moved and gone quiet, instead of each message on its own. One
+  call to the small AI model in the EU writes the conversation's note and says what it asks of the owner, by when and how much is at
+  stake. Whether to tell the owner now or in the morning brief is then decided by code, with rules that can be read, not by a second AI.
+- To judge well, that call now also sees the owner's calendar for the next 7 days and their free slots, past matters with the person,
+  and upcoming birthdays. It still never receives sensitive details, and plain thanks, newsletters, calendar replies and muted chats
+  never reach any AI.
+- If you write to the owner that you don't want to be contacted by Lou, or don't want an AI to read your messages, Lou registers it as
+  a request and tells the owner at once, so it doesn't depend on someone noticing.
+- What the owner promises in their own messages ("I'll send it tomorrow") is kept as a to-do for them.
+- The daily review also writes the morning brief, in the same run, so one AI pass a day instead of two.
+
 ## 0.2.10 · 2026-11-08
 - Organisations and topics: Lou groups what it knows by organisation, recognised by the domain of its email addresses (never a free
   mailbox like Gmail), and by topic, once it comes up in more than one conversation. A new email, even from another address of the same

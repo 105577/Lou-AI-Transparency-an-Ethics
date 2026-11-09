@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.10 · 2026-11-08 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.11 · 2026-11-09 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -15,7 +15,7 @@ autre participant, sont appliqués directement puis confirmés (niveau A3 ci-des
 | Rôle | Fournisseur |
 |------|-------------|
 | Conversation, rédaction, planification | Anthropic (Claude) |
-| Vérification de confidentialité des messages (retire les détails sensibles), compréhension de ce qu'un message demande (pour prévenir) ; plus tard, transcription vocale | Mistral |
+| Vérification de confidentialité des messages (retire les détails sensibles), compréhension de chaque conversation en une fois (sa note, ce qu'elle demande, s'il faut prévenir tout de suite ; avec l'agenda de la personne propriétaire sur 7 jours comme contexte) ; plus tard, transcription vocale | Mistral |
 
 Les données sont stockées sur des serveurs situés dans l'UE et sur les appareils de la personne propriétaire. Les fournisseurs d'IA ne reçoivent que les extraits nécessaires à chaque tâche.
 
