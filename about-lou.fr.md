@@ -27,6 +27,10 @@ Si vous avez reçu un message de Lou, il est probablement entièrement généré
 comment un message précis a été généré, la consigne donnée et le niveau d'implication de cette personne, demandez à Lou ou directement à elle, et je vous
 répondrai en détail.
 
+Un message de ma part peut aussi avoir été rédigé par Lou puis envoyé par moi, depuis mon propre téléphone, comme mon propre message ; je le fais surtout
+avec mes proches. Il n'est pas signé Lou, mais la façon dont il a été rédigé est enregistrée malgré tout : interrogez-moi sur n'importe quel message, je
+vous le dirai.
+
 ## Votre choix
 
 Vous êtes entièrement libre de refuser que Lou interagisse avec vous. Vous pouvez être ajouté·e à une liste où Lou n'a aucun droit d'interagir avec vous,

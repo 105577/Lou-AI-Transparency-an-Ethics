@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.12 · 2026-11-09 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.13 · 2026-11-13 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -14,14 +14,16 @@ are applied directly and confirmed (level A3 below). Any change to this is annou
 ## Models & data
 | Role | Provider |
 |------|----------|
-| Conversation, drafting, planning | Anthropic (Claude) |
-| Privacy check on messages (removes sensitive details), understanding each conversation once (its note, what it asks, whether to tell the owner now; with the owner's calendar for 7 days as context); later speech-to-text | Mistral |
+| Privacy check at arrival: removes sensitive details before any other part of Lou can read a message; search by meaning; later speech-to-text | Mistral (EU) |
+| Conversation, drafting, and the case files (where things stand with each person or organisation, what is open, each point with its messages), only from messages the privacy check has passed | Anthropic (Claude) |
 
 Data is stored on servers in the EU and on the owner's own devices. AI providers receive only the excerpts needed for a given task.
 
 ## Data practices
-- Never kept: notes or profiles with sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.). Lou keeps a short note per conversation (where things stand, what's pending), written from messages with sensitive details already removed and checked again.
-- Sensitive details about others are removed automatically before Lou's AI reads any message, and erased from what is stored. Money details (balances, amounts, account numbers) are treated the same way, the owner's included.
+- Never kept: notes or profiles with sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.). Lou keeps a case file per person or organisation (where things stand, what is open), written only from checked messages; a point that no message proves is refused by code.
+- One gate at arrival: sensitive details about others are removed as soon as a message arrives, and erased from what is stored; until then, no part of Lou can read it. Money trouble and bank or card numbers are treated the same way, the owner's included; a price or an amount to reimburse stays.
+- Phone calls: Lou knows when the owner called someone it already knows, and for how long, never what was said.
+- Erasure: what you wrote goes, and your name and contact details are replaced by "[erased]" wherever the owner or Lou wrote them.
 - A weekly encrypted backup of Lou's database is kept on the owner's devices for 8 weeks; erased data leaves the backups within that time.
 - Lou keeps a short contact card per person (name, birthday, how they relate to the owner, the latest context). How people relate to the owner and to each other comes only from the owner, never guessed.
 - Lou also groups what it knows by organisation (from email domains) and by recurring topic. The owner's preferences shape style and priorities only: they can never give Lou a permission.
@@ -47,6 +49,8 @@ Each message Lou prepares has a generation record, available on request:
 | G5 | Generated without a specific instruction | | |
 
 Messages at G2 and above are signed "Lou". G0–G1 messages are signed by the owner.
+A draft the owner sends from their own phone is their own message and isn't signed Lou (by default, for people close to the owner); its
+generation record is kept all the same, and available on request.
 
 ## Contact
 **lou.kernel@gmail.com** (the owner answers personally).

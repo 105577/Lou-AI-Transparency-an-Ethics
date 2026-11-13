@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.12 · 2026-11-09 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.13 · 2026-11-13 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -14,14 +14,16 @@ autre participant, sont appliqués directement puis confirmés (niveau A3 ci-des
 ## Modèles & données
 | Rôle | Fournisseur |
 |------|-------------|
-| Conversation, rédaction, planification | Anthropic (Claude) |
-| Vérification de confidentialité des messages (retire les détails sensibles), compréhension de chaque conversation en une fois (sa note, ce qu'elle demande, s'il faut prévenir tout de suite ; avec l'agenda de la personne propriétaire sur 7 jours comme contexte) ; plus tard, transcription vocale | Mistral |
+| Vérification de confidentialité à l'arrivée : retire les détails sensibles avant que toute autre partie de Lou puisse lire un message ; recherche par le sens ; plus tard, transcription vocale | Mistral (UE) |
+| Conversation, rédaction, et les dossiers (où en sont les choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages), uniquement à partir de messages que la vérification a laissés passer | Anthropic (Claude) |
 
 Les données sont stockées sur des serveurs situés dans l'UE et sur les appareils de la personne propriétaire. Les fournisseurs d'IA ne reçoivent que les extraits nécessaires à chaque tâche.
 
 ## Données
-- Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Lou garde une courte note par conversation (où en sont les choses, ce qui reste à faire), rédigée à partir de messages déjà débarrassés des détails sensibles, puis vérifiée à nouveau.
-- Les détails sensibles concernant les autres sont retirés automatiquement avant que l'IA de Lou ne lise un message, et effacés de ce qui est enregistré. Les informations financières (soldes, montants, numéros de compte) sont traitées de la même façon, y compris celles de la personne propriétaire.
+- Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Lou garde un dossier par personne ou organisation (où en sont les choses, ce qui reste ouvert), rédigé uniquement à partir de messages vérifiés ; un point qu'aucun message ne prouve est refusé par le code.
+- Un seul contrôle à l'arrivée : les détails sensibles concernant les autres sont retirés dès qu'un message arrive, et effacés de ce qui est enregistré ; d'ici là, aucune partie de Lou ne peut le lire. Les difficultés d'argent et les numéros de compte ou de carte sont traités de la même façon, y compris ceux de la personne propriétaire ; un prix ou une somme à rembourser reste.
+- Appels : Lou sait quand la personne propriétaire a appelé quelqu'un qu'elle connaît déjà, et combien de temps, jamais ce qui s'est dit.
+- Effacement : ce que vous avez écrit disparaît, et votre nom et vos coordonnées sont remplacés par « [erased] » partout où la personne propriétaire ou Lou les ont écrits.
 - Une sauvegarde chiffrée de la base de données de Lou est faite chaque semaine et conservée 8 semaines sur les appareils de la personne propriétaire ; les données effacées en disparaissent dans ce délai.
 - Lou garde une courte fiche contact par personne (nom, anniversaire, lien avec la personne propriétaire, contexte récent). Les liens avec la personne propriétaire et entre les personnes ne viennent que d'elle, jamais devinés.
 - Lou regroupe aussi ce qu'elle sait par organisation (d'après les domaines des adresses e-mail) et par sujet récurrent. Les préférences de la personne propriétaire jouent seulement sur le style et les priorités : elles ne peuvent jamais donner une permission à Lou.
@@ -47,6 +49,8 @@ Chaque message préparé par Lou a une fiche de génération, disponible sur dem
 | G5 | Généré sans consigne spécifique | | |
 
 Les messages de niveau G2 et plus sont signés « Lou ». Les messages G0–G1 sont signés par la personne elle-même.
+Un brouillon que la personne propriétaire envoie depuis son propre téléphone est son propre message et n'est pas signé Lou (par défaut, pour
+les personnes qui lui sont proches) ; sa fiche de génération est conservée malgré tout, et disponible sur demande.
 
 ## Contact
 **lou.kernel@gmail.com** (réponse personnelle de la personne propriétaire).

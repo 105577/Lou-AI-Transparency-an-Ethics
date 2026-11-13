@@ -24,6 +24,9 @@ I'm very particular about security, privacy, and ethics. I am doing my best to m
 If you received a message from Lou, it is likely fully generated, based on a prompt from its owner. If you'd like to know how an exact message was generated,
 the prompt given and the level of involvement of its owner, feel free to ask Lou or its owner and I'll get back to you with the details.
 
+A message from me may also have been drafted by Lou and sent by me, from my own phone, as my own; I mostly do this with people close to me. It isn't
+signed Lou, but how it was written is recorded all the same: ask me about any message, and I'll tell you.
+
 ## Your choice
 
 You have complete freedom to refuse Lou interacting with you. You can be added to a list where Lou has no right to interact with you in any form.

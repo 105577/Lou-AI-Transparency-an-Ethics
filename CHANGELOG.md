@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.2.13 · 2026-11-13
+- One check at arrival: the privacy check, run in the EU, now passes every message as soon as it arrives, before any other part of Lou
+  can read it. Until it has, no part of Lou reads the message; if the check can't run, the message waits, unread, and is checked again.
+  Money is sensitive when it is trouble (an overdraft, a debt, a loss) or an account number, not when it is a price or an amount to
+  reimburse.
+- Which AI reads what: Mistral (EU) is the filter between the world and the rest of Lou. Lou's main AI (Anthropic's Claude) now also
+  keeps a case file per person and organisation: where things stand and what is still open, each point with the messages that prove it.
+  It reads only what the filter has passed, and code refuses any point that no message proves. This replaces the short note per
+  conversation and the daily AI review.
+- Lou asks rather than guesses: when something may have been settled out of its sight (a call, a meeting), it asks the owner in one
+  line. It now knows when the owner called someone it already knows, from the owner's own computer: who, when and how long, never what
+  was said.
+- Names: two records with the same full name are treated as one person, and the owner can separate them. The owner can give Lou their
+  contacts as a file, to put names on numbers; Lou adds nobody from it.
+- Who sends a draft: the owner can send a message Lou drafted from their own phone, as their own (by default, for people close to them).
+  It isn't signed Lou; how it was written is recorded all the same, and you can ask about any message.
+- Erasure goes further: wherever the owner or Lou wrote your name or contact details (the owner's messages to Lou, reminders, to-dos,
+  Lou's logs), they are replaced by "[erased]". The log of changes to what Lou knows now also loses its text after 12 months, like the
+  rest; every encrypted field now states its retention and erasure, checked automatically.
+- How Lou learns: from the owner's words (what's done, what to drop, a correction), from what became of each draft (sent as is, edited,
+  not sent) and from what the owner does with each heads-up. Its rules change only through reviewed code.
+
 ## 0.2.12 · 2026-11-09
 - Backups: once a week, Lou makes an encrypted copy of its database, kept on the owner's own devices, so a failure or a mistake can't
   wipe what Lou knows. The last 8 copies are kept (about two months). They're encrypted before they're written, with a key only the
