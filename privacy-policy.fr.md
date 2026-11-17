@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.13 · 2026-11-17
+[English](privacy-policy.en.md) · Version 0.2.14 · 2026-11-17
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -29,6 +29,9 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
   personnes que Lou connaît déjà. Lou n'y ajoute personne et n'a aucun accès permanent à son carnet d'adresses.
 - **Les messages envoyés au numéro WhatsApp de Lou.** Seuls ceux de la personne propriétaire sont traités. Si quelqu'un d'autre écrit à ce numéro, Lou enregistre
   seulement qu'un message est arrivé et quand, sans jamais le lire.
+- **Ce que la personne propriétaire envoie à Lou :** messages vocaux, images et PDF, et messages qu'elle transfère à Lou. Un message transféré, une
+  capture d'écran ou un document peut contenir vos mots : il passe par la vérification de confidentialité **avant toute autre lecture par une IA**.
+  Le fichier lui-même est supprimé une fois lu (au plus un jour) ; seul son texte est conservé, comme ses propres messages.
 
 ## Ce que Lou conserve
 
@@ -67,16 +70,18 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 - **Fournisseurs d'IA**, uniquement pour l'extrait nécessaire à une tâche donnée, jamais tout votre historique :
   - **Mistral**, basée dans l'**Union européenne**, effectue la vérification de confidentialité : c'est le filtre entre le monde et le reste de
     Lou. Elle ne reçoit que les messages qu'un premier jeu de règles signale. Elle permet aussi à la recherche de Lou de comprendre le sens
-    (« l'appartement » trouve aussi « l'appart ») ; plus tard, la transcription vocale.
+    (« l'appartement » trouve aussi « l'appart »), transcrit les messages vocaux de la personne propriétaire et lit le texte des images et PDF
+    qu'elle envoie à Lou.
   - **Anthropic** (Claude), entreprise basée aux **États-Unis**, prépare les réponses et les brouillons, et tient les dossiers (où en sont les
     choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages). Quand la personne propriétaire écrit
     dans une conversation (un groupe aussi), elle lit ce message avec les quelques précédents, pour repérer un créneau accepté et le mettre
     dans son agenda. Elle ne lit un message **qu'une fois que la
     vérification de confidentialité l'a laissé passer**, jamais avant. Selon ses conditions commerciales, ces données ne servent pas à entraîner
     ses modèles.
-- **Recherches sur le web :** pour des informations publiques et à jour (l'état d'un train, une entreprise, un lieu), Lou peut chercher sur le web
-  via son fournisseur d'IA. Ces recherches portent sur des sujets publics : Lou a pour consigne de ne jamais y mettre votre nom ou vos coordonnées,
-  et chaque recherche est enregistrée pour que la personne propriétaire puisse vérifier.
+- **Recherches et pages sur le web :** pour des informations publiques et à jour (l'état d'un train, une entreprise, un lieu), Lou peut chercher sur
+  le web et lire des pages publiques via son fournisseur d'IA ; elle ne lit que des pages dont l'adresse figure déjà dans la conversation, et ne
+  peut donc pas en fabriquer une avec vos coordonnées. Ces recherches portent sur des sujets publics : Lou a pour consigne de ne jamais y mettre
+  votre nom ou vos coordonnées, et chaque recherche et page est enregistrée pour que la personne propriétaire puisse vérifier.
 - **Les plateformes par lesquelles les messages passent déjà :** WhatsApp (Meta) pour le numéro de Lou, et Google pour les e-mails et l'agenda de la
   personne propriétaire, consultés via leurs interfaces officielles avec son autorisation.
 
@@ -88,7 +93,7 @@ Rien n'est vendu ni partagé à des fins publicitaires. Rien n'est publié.
   ou plus tôt si vous le demandez. Il reste un enregistrement sans contenu (qui a écrit, quand, si un message a été envoyé, et une empreinte
   qui prouve ce qui a été envoyé sans permettre de le relire), conservé avec le journal d'activité.
 - Les dossiers et le journal des modifications de ce que Lou sait : leur texte est lui aussi effacé au bout de 12 mois.
-- Enregistrements vocaux : supprimés une fois transcrits.
+- Messages vocaux, images et PDF envoyés à Lou : supprimés une fois lus, au plus un jour ; leur texte suit les 12 mois ci-dessus.
 - Le journal d'activité : conservé **3 ans**, car c'est ce qui rend Lou vérifiable. Il ne contient aucun contenu de message.
 - Sauvegardes : une copie chiffrée de la base de données de Lou chaque semaine, sur les appareils de la personne propriétaire ; les
   **8 dernières semaines** sont conservées. Ce qui est effacé (sur demande ou au bout de 12 mois) disparaît des sauvegardes à mesure

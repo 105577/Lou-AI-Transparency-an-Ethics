@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.14 · 2026-11-17
+- Voice notes: the owner can talk to Lou. Their voice notes are turned into text in the EU (Mistral) and the audio is deleted once heard.
+- What the owner sends Lou: images and PDFs (a ticket, a screenshot of a booking) are read in the EU (Mistral) and deleted once read, a day
+  at most; only the text is kept. Anything that isn't the owner's own voice, a forwarded message included, passes the privacy check before any
+  other AI reads it (forwarded text messages didn't before: now they do).
+- Web pages: besides searching the web, Lou can read a public page, only one whose address is already in the conversation, so it can't build
+  an address with your details. Every page read is recorded, like every search.
+- What Lou can do is now declared in one place in its code, and the list on the Lou card is generated from it: a capability that isn't
+  declared, with where its data goes and its own monthly budget, can't ship.
+
 ## 0.2.13 · 2026-11-17
 - The owner's own calendar: when the owner agrees to a time in their own words (in a chat, a group or an email), Lou blocks it on their
   calendar within a minute and tells them, with a one-word undo; a booking an organisation sends (a train, a hotel) too. To notice it, Lou's

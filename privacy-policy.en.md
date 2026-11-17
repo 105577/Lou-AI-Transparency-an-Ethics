@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.13 · 2026-11-17
+[Français](privacy-policy.fr.md) · Version 0.2.14 · 2026-11-17
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -26,6 +26,9 @@ Only what reaches the owner, with the owner's permission:
   knows. Lou adds nobody from them and has no standing access to the owner's address book.
 - **Messages sent to Lou's own WhatsApp number.** Only the owner's messages are processed. If anyone else writes to that number, Lou records
   only that a message arrived and when, and never reads it.
+- **What the owner sends Lou:** voice notes, images and PDFs, and messages the owner forwards to Lou. A forwarded message, a screenshot or a
+  document may contain your words: it passes the privacy check **before any other AI reads it**. The file itself is deleted once read (a day
+  at most); only its text is kept, like the owner's own messages.
 
 ## What Lou keeps
 
@@ -61,14 +64,16 @@ Only what reaches the owner, with the owner's permission:
   the hosting provider cannot read it.
 - **AI providers**, only for the excerpt needed for a given task, never your whole history:
   - **Mistral**, based in the **European Union**, runs the privacy check: it is the filter between the world and the rest of Lou. It receives
-    only the messages a first set of rules flags. It also makes Lou's search understand meaning ("the apartment" also finds "the flat");
-    later, speech-to-text.
+    only the messages a first set of rules flags. It also makes Lou's search understand meaning ("the apartment" also finds "the flat"),
+    turns the owner's voice notes into text, and reads the text of images and PDFs the owner sends Lou.
   - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts, and keeps the case files (where things
     stand with each person or organisation, what is open, each point with its messages). When the owner writes in a conversation (a group
     included), it reads that message with the few before it, to notice a time the owner agreed to and put it in the owner's calendar. It reads messages **only once the privacy check
     has passed them**, never before. Under its commercial terms, this data is not used to train its models.
-- **Web searches:** for public, current information (a train's status, a company, a place), Lou can search the web through its AI provider.
-  Searches are about public things: Lou is instructed never to put your name or details in one, and every search is recorded so the owner can check.
+- **Web searches and pages:** for public, current information (a train's status, a company, a place), Lou can search the web and read public
+  pages through its AI provider; it reads only pages whose address is already in the conversation, so it can't build one with your details.
+  Searches are about public things: Lou is instructed never to put your name or details in one, and every search and page is recorded so the
+  owner can check.
 - **The platforms the messages already go through:** WhatsApp (Meta) for Lou's own number, and Google for the owner's email and calendar,
   accessed through their official interfaces with the owner's permission.
 
@@ -80,7 +85,7 @@ Nothing is sold or shared for advertising. Nothing is published.
   What remains is a record without content (who wrote, when, whether a message was sent, and a fingerprint that proves what was sent
   without allowing anyone to read it again), kept with the activity log.
 - Case files and the log of changes to what Lou knows: their text is erased after 12 months too.
-- Voice recordings: deleted once transcribed.
+- Voice notes, images and PDFs sent to Lou: deleted once read, a day at most; their text follows the 12 months above.
 - The activity log: kept **3 years**, because it is what makes Lou auditable. It holds no message content.
 - Backups: a weekly encrypted copy of Lou's database, on the owner's own devices; the last **8 weeks** are kept. Something erased
   (on request or after 12 months) disappears from the backups as they're replaced, within 8 weeks. Backups are only used to restore

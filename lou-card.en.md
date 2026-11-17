@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.13 · 2026-11-17 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.14 · 2026-11-17 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -13,11 +13,24 @@ owner asks, and blocks on its own a time the owner agreed to in their own words,
 change is confirmed at once with a one-word undo (level A3 below). A message from someone else is never enough to change anything. Any
 change to this is announced in the [changelog](CHANGELOG.md).
 
+## What Lou can do
+Generated from Lou's capability registry: nothing ships without a line here.
+- Answers the owner, prepares drafts and the morning brief (Anthropic, Claude).
+- Keeps a case file per person and organisation, groups the owner's to-dos into projects, works out where the owner is (Anthropic, Claude; only messages the privacy check has passed).
+- Checks every message for sensitive details before anything else reads it, and makes search understand meaning (Mistral, EU).
+- Turns the owner's voice notes into text (Mistral, EU); the audio is deleted once heard.
+- Reads the text of images and PDFs the owner sends it (Mistral, EU), checked for sensitive details before anything else reads it; the file is deleted once read.
+- Searches the web and reads public pages for current information (a train's status, opening hours), through Anthropic; never with your name or details, and every search and page is logged.
+- Sends a message or an email only after the owner approves that exact text.
+- Adds or moves events with nobody else on them in the owner's own calendar, and blocks a time the owner agreed to or a booking, with a one-word undo.
+
+Not built: acting on websites, sending in group chats, inviting people to events.
+
 ## Models & data
 | Role | Provider |
 |------|----------|
-| Privacy check at arrival: removes sensitive details before any other part of Lou can read a message; search by meaning; later speech-to-text | Mistral (EU) |
-| Conversation, drafting, and the case files (where things stand with each person or organisation, what is open, each point with its messages), only from messages the privacy check has passed | Anthropic (Claude) |
+| Privacy check at arrival: removes sensitive details before any other part of Lou can read a message; search by meaning; the owner's voice notes to text, and the text of images and PDFs the owner sends | Mistral (EU) |
+| Conversation, drafting, and the case files (where things stand with each person or organisation, what is open, each point with its messages), only from messages the privacy check has passed; web searches and public pages | Anthropic (Claude) |
 
 Data is stored on servers in the EU and on the owner's own devices. AI providers receive only the excerpts needed for a given task.
 
@@ -31,7 +44,7 @@ Data is stored on servers in the EU and on the owner's own devices. AI providers
 - Lou also groups what it knows by organisation (from email domains) and by recurring topic. The owner's preferences shape style and priorities only: they can never give Lou a permission.
 - Possibly sensitive content is sealed: encrypted with a key only the owner holds, so Lou itself can't read it *(in progress)*.
 - Full details: [privacy policy](privacy-policy.en.md).
-- Lou keeps no copy of voice recordings once they are transcribed.
+- What the owner sends Lou: voice notes are turned into text and the audio deleted; images and PDFs are read and deleted (a day at most); only the text is kept. Anything that isn't the owner's own voice (a forwarded message, a screenshot, a document) passes the privacy check before any other AI reads it.
 - Everyone is opted in by default and can opt out at any time, at one of three levels:
   - **no contact**: Lou never writes to you;
   - **no content**: Lou only knows that you wrote and when, never what (no AI reads your messages);

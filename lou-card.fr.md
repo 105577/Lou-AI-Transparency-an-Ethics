@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.13 · 2026-11-17 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.14 · 2026-11-17 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -13,11 +13,24 @@ déplace un événement à sa demande, et bloque d'elle-même un créneau que la
 réservation envoyée par une organisation (un train, un hôtel). Chaque changement est confirmé aussitôt, avec une annulation en un mot (niveau A3
 ci-dessous). Le message d'une autre personne ne suffit jamais à rien changer. Tout changement est annoncé dans l'[historique](CHANGELOG.md).
 
+## Ce que Lou sait faire
+Généré à partir du registre des capacités de Lou : rien n'est mis en service sans une ligne ici.
+- Répond à la personne propriétaire, prépare les brouillons et le point du matin (Anthropic, Claude).
+- Tient un dossier par personne et organisation, regroupe les choses à faire en projets, sait où se trouve la personne propriétaire (Anthropic, Claude ; seulement des messages passés par la vérification).
+- Vérifie chaque message pour en retirer les détails sensibles avant toute autre lecture, et permet une recherche par le sens (Mistral, UE).
+- Transcrit les messages vocaux de la personne propriétaire (Mistral, UE) ; l'audio est supprimé une fois transcrit.
+- Lit le texte des images et PDF que la personne propriétaire lui envoie (Mistral, UE), vérifié avant toute autre lecture ; le fichier est supprimé une fois lu.
+- Cherche sur le web et lit des pages publiques pour des informations à jour (l'état d'un train, des horaires), via Anthropic ; jamais avec votre nom ou vos coordonnées, et chaque recherche et page est consignée.
+- N'envoie un message ou un e-mail qu'après validation de ce texte exact par la personne propriétaire.
+- Ajoute ou déplace des événements sans autre participant dans l'agenda de la personne propriétaire, et bloque un créneau accepté ou une réservation, annulable en un mot.
+
+Pas encore : agir sur des sites web, envoyer dans des groupes, inviter des personnes à des événements.
+
 ## Modèles & données
 | Rôle | Fournisseur |
 |------|-------------|
-| Vérification de confidentialité à l'arrivée : retire les détails sensibles avant que toute autre partie de Lou puisse lire un message ; recherche par le sens ; plus tard, transcription vocale | Mistral (UE) |
-| Conversation, rédaction, et les dossiers (où en sont les choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages), uniquement à partir de messages que la vérification a laissés passer | Anthropic (Claude) |
+| Vérification de confidentialité à l'arrivée : retire les détails sensibles avant que toute autre partie de Lou puisse lire un message ; recherche par le sens ; transcription des messages vocaux de la personne propriétaire, et texte des images et PDF qu'elle envoie | Mistral (UE) |
+| Conversation, rédaction, et les dossiers (où en sont les choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages), uniquement à partir de messages que la vérification a laissés passer ; recherches sur le web et pages publiques | Anthropic (Claude) |
 
 Les données sont stockées sur des serveurs situés dans l'UE et sur les appareils de la personne propriétaire. Les fournisseurs d'IA ne reçoivent que les extraits nécessaires à chaque tâche.
 
@@ -31,7 +44,7 @@ Les données sont stockées sur des serveurs situés dans l'UE et sur les appare
 - Lou regroupe aussi ce qu'elle sait par organisation (d'après les domaines des adresses e-mail) et par sujet récurrent. Les préférences de la personne propriétaire jouent seulement sur le style et les priorités : elles ne peuvent jamais donner une permission à Lou.
 - Les contenus potentiellement sensibles sont scellés : chiffrés avec une clé que seule la personne propriétaire détient, Lou elle-même ne peut pas les lire *(en cours)*.
 - Tous les détails : [politique de confidentialité](privacy-policy.fr.md).
-- Lou ne garde aucune copie des enregistrements vocaux une fois transcrits.
+- Ce que la personne propriétaire envoie à Lou : les messages vocaux sont transcrits et l'audio supprimé ; les images et PDF sont lus puis supprimés (au plus un jour) ; seul le texte est conservé. Tout ce qui n'est pas sa propre voix (un message transféré, une capture d'écran, un document) passe par la vérification de confidentialité avant toute autre lecture par une IA.
 - Tout le monde est inclus par défaut et peut se retirer à tout moment, à l'un de ces trois niveaux :
   - **aucun contact** : Lou ne vous écrit jamais ;
   - **aucun contenu** : Lou sait seulement que vous avez écrit et quand, jamais quoi (aucune IA ne lit vos messages) ;
