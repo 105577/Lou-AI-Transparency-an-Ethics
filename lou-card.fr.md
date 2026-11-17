@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.13 · 2026-11-13 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.13 · 2026-11-17 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -8,8 +8,10 @@ Elle **n'agit pas** d'elle-même, n'engage jamais sur de l'argent, des questions
 
 ## Autonomie
 Aujourd'hui, **chaque message ou action qui touche une autre personne est validé** mot pour mot par la personne qui l'utilise avant d'avoir lieu.
-Seule exception, qui ne concerne que la personne propriétaire : les changements dans son propre agenda qu'elle a demandés, sur des événements sans
-autre participant, sont appliqués directement puis confirmés (niveau A3 ci-dessous). Tout changement est annoncé dans l'[historique](CHANGELOG.md).
+Seule exception, qui ne concerne que la personne propriétaire : son propre agenda, pour des événements sans autre participant. Lou ajoute ou
+déplace un événement à sa demande, et bloque d'elle-même un créneau que la personne propriétaire a accepté dans ses propres mots, ou une
+réservation envoyée par une organisation (un train, un hôtel). Chaque changement est confirmé aussitôt, avec une annulation en un mot (niveau A3
+ci-dessous). Le message d'une autre personne ne suffit jamais à rien changer. Tout changement est annoncé dans l'[historique](CHANGELOG.md).
 
 ## Modèles & données
 | Rôle | Fournisseur |
@@ -43,7 +45,7 @@ Chaque message préparé par Lou a une fiche de génération, disponible sur dem
 |-----------|--|----------|--|
 | G0 | Écrit par la personne, sans IA | A1 | Écrit et envoyé par la personne |
 | G1 | Corrigé ou traduit par Lou | A2 | Rédigé par Lou, relu et validé par la personne (par défaut) |
-| G2 | Amélioré par Lou à partir de son texte | A3 | Fait par Lou sous une autorisation permanente (seulement l'agenda de la personne propriétaire, à sa demande) |
+| G2 | Amélioré par Lou à partir de son texte | A3 | Fait par Lou sous une autorisation permanente (seulement l'agenda de la personne propriétaire : à sa demande, un créneau qu'elle a accepté, ou une réservation) |
 | G3 | Généré à partir de consignes détaillées | | |
 | G4 | Généré à partir d'une courte consigne | | |
 | G5 | Généré sans consigne spécifique | | |

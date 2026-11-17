@@ -1,6 +1,11 @@
 # Changelog
 
-## 0.2.13 · 2026-11-13
+## 0.2.13 · 2026-11-17
+- The owner's own calendar: when the owner agrees to a time in their own words (in a chat, a group or an email), Lou blocks it on their
+  calendar within a minute and tells them, with a one-word undo; a booking an organisation sends (a train, a hotel) too. To notice it, Lou's
+  main AI reads the owner's message with the few before it in that conversation, only once the privacy check has passed them. A message
+  from someone else alone never changes the owner's calendar: at most, Lou suggests it to the owner.
+- Who said what: in an email, the earlier messages it quotes are no longer read as its sender's own words.
 - One check at arrival: the privacy check, run in the EU, now passes every message as soon as it arrives, before any other part of Lou
   can read it. Until it has, no part of Lou reads the message; if the check can't run, the message waits, unread, and is checked again.
   Money is sensitive when it is trouble (an overdraft, a debt, a loss) or an account number, not when it is a price or an amount to

@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.13 · 2026-11-13 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.13 · 2026-11-17 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -8,8 +8,10 @@ It does **not** act on its own, commit its owner to money, legal matters or agre
 
 ## Autonomy
 Today **every message or action that reaches another person is approved by its owner**, word for word, before it happens.
-The only exception concerns the owner alone: changes to the owner's own calendar that the owner asked for, on events with nobody else on them,
-are applied directly and confirmed (level A3 below). Any change to this is announced in the [changelog](CHANGELOG.md).
+The only exception concerns the owner alone: their own calendar, on events with nobody else on them. Lou adds or moves an event when the
+owner asks, and blocks on its own a time the owner agreed to in their own words, or a booking an organisation sent (a train, a hotel). Each
+change is confirmed at once with a one-word undo (level A3 below). A message from someone else is never enough to change anything. Any
+change to this is announced in the [changelog](CHANGELOG.md).
 
 ## Models & data
 | Role | Provider |
@@ -43,7 +45,7 @@ Each message Lou prepares has a generation record, available on request:
 |-----------|--|--------|--|
 | G0 | Written by the owner, no AI | A1 | Written and sent by the owner |
 | G1 | Corrected or translated by Lou | A2 | Drafted by Lou, reviewed and approved by the owner (current default) |
-| G2 | Enhanced by Lou from the owner's text | A3 | Done by Lou under a standing permission (only the owner's own calendar, at their request) |
+| G2 | Enhanced by Lou from the owner's text | A3 | Done by Lou under a standing permission (only the owner's own calendar: at their request, a time they agreed to, or a booking) |
 | G3 | Generated from detailed instructions | | |
 | G4 | Generated from a short instruction | | |
 | G5 | Generated without a specific instruction | | |

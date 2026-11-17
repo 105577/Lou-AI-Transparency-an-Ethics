@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.13 · 2026-11-13
+[English](privacy-policy.en.md) · Version 0.2.13 · 2026-11-17
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -69,7 +69,9 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
     Lou. Elle ne reçoit que les messages qu'un premier jeu de règles signale. Elle permet aussi à la recherche de Lou de comprendre le sens
     (« l'appartement » trouve aussi « l'appart ») ; plus tard, la transcription vocale.
   - **Anthropic** (Claude), entreprise basée aux **États-Unis**, prépare les réponses et les brouillons, et tient les dossiers (où en sont les
-    choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages). Elle ne lit un message **qu'une fois que la
+    choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages). Quand la personne propriétaire écrit
+    dans une conversation (un groupe aussi), elle lit ce message avec les quelques précédents, pour repérer un créneau accepté et le mettre
+    dans son agenda. Elle ne lit un message **qu'une fois que la
     vérification de confidentialité l'a laissé passer**, jamais avant. Selon ses conditions commerciales, ces données ne servent pas à entraîner
     ses modèles.
 - **Recherches sur le web :** pour des informations publiques et à jour (l'état d'un train, une entreprise, un lieu), Lou peut chercher sur le web
