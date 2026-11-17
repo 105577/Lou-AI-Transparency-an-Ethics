@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.14 · 2026-11-17 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.15 · 2026-11-17 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -9,8 +9,8 @@ It does **not** act on its own, commit its owner to money, legal matters or agre
 ## Autonomy
 Today **every message or action that reaches another person is approved by its owner**, word for word, before it happens.
 The only exception concerns the owner alone: their own calendar, on events with nobody else on them. Lou adds or moves an event when the
-owner asks, and blocks on its own a time the owner agreed to in their own words, or a booking an organisation sent (a train, a hotel). Each
-change is confirmed at once with a one-word undo (level A3 below). A message from someone else is never enough to change anything. Any
+owner asks, and blocks on its own a time the owner agreed to in their own words, or a booking an organisation sent (a train, a hotel); when
+the owner's own words later move or cancel that time, it moves or removes its block. Each change is confirmed at once with a one-word undo (level A3 below). A message from someone else is never enough to change anything. Any
 change to this is announced in the [changelog](CHANGELOG.md).
 
 ## What Lou can do
@@ -22,7 +22,7 @@ Generated from Lou's capability registry: nothing ships without a line here.
 - Reads the text of images and PDFs the owner sends it (Mistral, EU), checked for sensitive details before anything else reads it; the file is deleted once read.
 - Searches the web and reads public pages for current information (a train's status, opening hours), through Anthropic; never with your name or details, and every search and page is logged.
 - Sends a message or an email only after the owner approves that exact text.
-- Adds or moves events with nobody else on them in the owner's own calendar, and blocks a time the owner agreed to or a booking, with a one-word undo.
+- Adds or moves events with nobody else on them in the owner's own calendar, blocks a time the owner agreed to or a booking, and moves or removes its own blocks when the owner's words change them; each with a one-word undo.
 
 Not built: acting on websites, sending in group chats, inviting people to events.
 

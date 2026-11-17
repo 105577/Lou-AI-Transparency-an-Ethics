@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.14 · 2026-11-17 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.15 · 2026-11-17 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -10,7 +10,8 @@ Elle **n'agit pas** d'elle-même, n'engage jamais sur de l'argent, des questions
 Aujourd'hui, **chaque message ou action qui touche une autre personne est validé** mot pour mot par la personne qui l'utilise avant d'avoir lieu.
 Seule exception, qui ne concerne que la personne propriétaire : son propre agenda, pour des événements sans autre participant. Lou ajoute ou
 déplace un événement à sa demande, et bloque d'elle-même un créneau que la personne propriétaire a accepté dans ses propres mots, ou une
-réservation envoyée par une organisation (un train, un hôtel). Chaque changement est confirmé aussitôt, avec une annulation en un mot (niveau A3
+réservation envoyée par une organisation (un train, un hôtel) ; si ses propres mots déplacent ou annulent ensuite ce créneau, Lou déplace ou
+retire son blocage. Chaque changement est confirmé aussitôt, avec une annulation en un mot (niveau A3
 ci-dessous). Le message d'une autre personne ne suffit jamais à rien changer. Tout changement est annoncé dans l'[historique](CHANGELOG.md).
 
 ## Ce que Lou sait faire
@@ -22,7 +23,7 @@ Généré à partir du registre des capacités de Lou : rien n'est mis en servic
 - Lit le texte des images et PDF que la personne propriétaire lui envoie (Mistral, UE), vérifié avant toute autre lecture ; le fichier est supprimé une fois lu.
 - Cherche sur le web et lit des pages publiques pour des informations à jour (l'état d'un train, des horaires), via Anthropic ; jamais avec votre nom ou vos coordonnées, et chaque recherche et page est consignée.
 - N'envoie un message ou un e-mail qu'après validation de ce texte exact par la personne propriétaire.
-- Ajoute ou déplace des événements sans autre participant dans l'agenda de la personne propriétaire, et bloque un créneau accepté ou une réservation, annulable en un mot.
+- Ajoute ou déplace des événements sans autre participant dans l'agenda de la personne propriétaire, bloque un créneau accepté ou une réservation, et déplace ou retire ses propres blocages quand ses mots les changent ; chaque fois annulable en un mot.
 
 Pas encore : agir sur des sites web, envoyer dans des groupes, inviter des personnes à des événements.
 

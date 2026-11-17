@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.15 · 2026-11-17
+- The owner's calendar follows their words: when the owner's own message moves or cancels a time Lou blocked, Lou moves or removes the
+  block and says so, with a one-word undo. Someone else's message alone still changes nothing. Undo now also puts back a move or a removal.
+- What the owner says in a group that they'll do ("I'll bring the drinks") becomes one of their to-dos, with that message as its proof.
+- Heads-ups no longer adjust themselves from the owner's reactions: only the owner's own settings ("fewer", "more", "never") change them.
+  This replaces what 0.2.13 said about learning "from what the owner does with each heads-up"; Lou still learns from the owner's words and
+  from what became of each draft.
+
 ## 0.2.14 · 2026-11-17
 - Voice notes: the owner can talk to Lou. Their voice notes are turned into text in the EU (Mistral) and the audio is deleted once heard.
 - What the owner sends Lou: images and PDFs (a ticket, a screenshot of a booking) are read in the EU (Mistral) and deleted once read, a day
