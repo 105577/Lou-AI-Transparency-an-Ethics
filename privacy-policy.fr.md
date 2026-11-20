@@ -72,12 +72,18 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
     Lou. Elle ne reçoit que les messages qu'un premier jeu de règles signale. Elle permet aussi à la recherche de Lou de comprendre le sens
     (« l'appartement » trouve aussi « l'appart »), transcrit les messages vocaux de la personne propriétaire et lit le texte des images et PDF
     qu'elle envoie à Lou.
-  - **Anthropic** (Claude), entreprise basée aux **États-Unis**, prépare les réponses et les brouillons, et tient les dossiers (où en sont les
-    choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages). Quand la personne propriétaire écrit
+  - **Anthropic** (Claude), entreprise basée aux **États-Unis**, prépare les réponses et les brouillons. Elle écrivait les dossiers (où en
+    sont les choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages) ; depuis la 0.2.16, aucun
+    n'est écrit le temps que la compréhension de Lou soit refaite, et ceux déjà écrits restent jusqu'à leur effacement, comme le reste. Quand la personne propriétaire écrit
     dans une conversation (un groupe aussi), elle lit ce message avec les quelques précédents, pour repérer un créneau accepté et le mettre
     dans son agenda. Elle ne lit un message **qu'une fois que la
     vérification de confidentialité l'a laissé passer**, jamais avant. Selon ses conditions commerciales, ces données ne servent pas à entraîner
     ses modèles.
+- **Une relecture, seulement avec l'accord de la personne propriétaire :** pour vérifier la qualité de Lou, elle peut permettre à un
+  relecteur (un assistant IA qui travaille pour elle, Claude d'Anthropic) de lire les journaux de Lou pendant quelques jours au plus (31),
+  et retirer cet accès à tout moment. Il voit ce que Lou voit une fois qu'un message a passé la vérification de confidentialité, jamais
+  plus : ce que la vérification a retiré reste retiré, et les numéros de téléphone et adresses e-mail sont masqués. Chaque lecture est
+  enregistrée, et la personne propriétaire voit chacune.
 - **Recherches et pages sur le web :** pour des informations publiques et à jour (l'état d'un train, une entreprise, un lieu), Lou peut chercher sur
   le web et lire des pages publiques via son fournisseur d'IA ; elle ne lit que des pages dont l'adresse figure déjà dans la conversation, et ne
   peut donc pas en fabriquer une avec vos coordonnées. Ces recherches portent sur des sujets publics : Lou a pour consigne de ne jamais y mettre

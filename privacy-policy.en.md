@@ -66,10 +66,15 @@ Only what reaches the owner, with the owner's permission:
   - **Mistral**, based in the **European Union**, runs the privacy check: it is the filter between the world and the rest of Lou. It receives
     only the messages a first set of rules flags. It also makes Lou's search understand meaning ("the apartment" also finds "the flat"),
     turns the owner's voice notes into text, and reads the text of images and PDFs the owner sends Lou.
-  - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts, and keeps the case files (where things
-    stand with each person or organisation, what is open, each point with its messages). When the owner writes in a conversation (a group
+  - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts. It wrote the case files (where things
+    stand with each person or organisation, what is open, each point with its messages); since 0.2.16 none are written while Lou's
+    understanding is rebuilt, and those already written stay until erased like the rest. When the owner writes in a conversation (a group
     included), it reads that message with the few before it, to notice a time the owner agreed to and put it in the owner's calendar. It reads messages **only once the privacy check
     has passed them**, never before. Under its commercial terms, this data is not used to train its models.
+- **A reviewer, only with the owner's consent:** to check Lou's quality, the owner can let a reviewer (an AI assistant working for the
+  owner, Claude by Anthropic) read Lou's logs for a few days at most (31), and withdraw it at any moment. It sees what Lou sees once the
+  privacy check has passed a message, never more: what the check removed stays removed, and phone numbers and email addresses are
+  masked. Every reading is recorded, and the owner sees each one.
 - **Web searches and pages:** for public, current information (a train's status, a company, a place), Lou can search the web and read public
   pages through its AI provider; it reads only pages whose address is already in the conversation, so it can't build one with your details.
   Searches are about public things: Lou is instructed never to put your name or details in one, and every search and page is recorded so the

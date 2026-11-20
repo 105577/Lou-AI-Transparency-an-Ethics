@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.15 · 2026-11-17 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.16 · 2026-11-20 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -10,13 +10,13 @@ It does **not** act on its own, commit its owner to money, legal matters or agre
 Today **every message or action that reaches another person is approved by its owner**, word for word, before it happens.
 The only exception concerns the owner alone: their own calendar, on events with nobody else on them. Lou adds or moves an event when the
 owner asks, and blocks on its own a time the owner agreed to in their own words, or a booking an organisation sent (a train, a hotel); when
-the owner's own words later move or cancel that time, it moves or removes its block. Each change is confirmed at once with a one-word undo (level A3 below). A message from someone else is never enough to change anything. Any
+the owner's own words later move or cancel that time, it moves or removes its block. Each change is said at once in one line, and one word ("undo") takes it back (level A3 below). A message from someone else is never enough to change anything. Any
 change to this is announced in the [changelog](CHANGELOG.md).
 
 ## What Lou can do
 Generated from Lou's capability registry: nothing ships without a line here.
-- Answers the owner, prepares drafts and the morning brief (Anthropic, Claude).
-- Keeps a case file per person and organisation, groups the owner's to-dos into projects, works out where the owner is (Anthropic, Claude; only messages the privacy check has passed).
+- Answers the owner and prepares drafts (Anthropic, Claude).
+- Works out where the owner is from their calendar and bookings (Anthropic, Claude; only messages the privacy check has passed). Case files and projects are paused while Lou's understanding is rebuilt.
 - Checks every message for sensitive details before anything else reads it, and makes search understand meaning (Mistral, EU).
 - Turns the owner's voice notes into text (Mistral, EU); the audio is deleted once heard.
 - Reads the text of images and PDFs the owner sends it (Mistral, EU), checked for sensitive details before anything else reads it; the file is deleted once read.
@@ -30,12 +30,12 @@ Not built: acting on websites, sending in group chats, inviting people to events
 | Role | Provider |
 |------|----------|
 | Privacy check at arrival: removes sensitive details before any other part of Lou can read a message; search by meaning; the owner's voice notes to text, and the text of images and PDFs the owner sends | Mistral (EU) |
-| Conversation, drafting, and the case files (where things stand with each person or organisation, what is open, each point with its messages), only from messages the privacy check has passed; web searches and public pages | Anthropic (Claude) |
+| Conversation and drafting, only from messages the privacy check has passed; web searches and public pages | Anthropic (Claude) |
 
 Data is stored on servers in the EU and on the owner's own devices. AI providers receive only the excerpts needed for a given task.
 
 ## Data practices
-- Never kept: notes or profiles with sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.). Lou keeps a case file per person or organisation (where things stand, what is open), written only from checked messages; a point that no message proves is refused by code.
+- Never kept: notes or profiles with sensitive information about others (health, political opinions, religion, sexual orientation, ethnic origin, etc.). The case files Lou wrote until 0.2.15 (where things stand with a person or organisation, what is open) were written only from checked messages; none are written while Lou's understanding is rebuilt.
 - One gate at arrival: sensitive details about others are removed as soon as a message arrives, and erased from what is stored; until then, no part of Lou can read it. Money trouble and bank or card numbers are treated the same way, the owner's included; a price or an amount to reimburse stays.
 - Phone calls: Lou knows when the owner called someone it already knows, and for how long, never what was said.
 - Erasure: what you wrote goes, and your name and contact details are replaced by "[erased]" wherever the owner or Lou wrote them.

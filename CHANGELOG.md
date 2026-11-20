@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.16 · 2026-11-20
+- Lou does less in the background, on purpose, while its understanding is rebuilt: no more case files, morning brief, heads-ups, project
+  proposals or after-meeting questions. Reminders, meeting reminders, the privacy check, search and the owner's calendar work as before.
+  Someone asking not to be contacted or read by an AI is still reported to the owner at once.
+- Spending limits on every AI call: a cap per day, and at night (00:00 to 07:00) background work waits for the morning.
+- Sending something on the owner's behalf now needs exactly the word *send* (or *no* to drop it), checked by code: no other phrasing, no
+  emoji, and with several drafts waiting, only the one the owner replies to.
+- A reviewer, with the owner's consent: the owner can let a reviewer (an AI assistant working for the owner) read Lou's logs for a few days
+  at most, revocable at any time; it sees only what passed the privacy check, with phone numbers and email addresses masked, and every
+  reading is recorded.
+
 ## 0.2.15 · 2026-11-17
 - The owner's calendar follows their words: when the owner's own message moves or cancels a time Lou blocked, Lou moves or removes the
   block and says so, with a one-word undo. Someone else's message alone still changes nothing. Undo now also puts back a move or a removal.

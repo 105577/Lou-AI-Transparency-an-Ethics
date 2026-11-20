@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.15 · 2026-11-17 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.16 · 2026-11-20 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -11,13 +11,13 @@ Aujourd'hui, **chaque message ou action qui touche une autre personne est valid�
 Seule exception, qui ne concerne que la personne propriétaire : son propre agenda, pour des événements sans autre participant. Lou ajoute ou
 déplace un événement à sa demande, et bloque d'elle-même un créneau que la personne propriétaire a accepté dans ses propres mots, ou une
 réservation envoyée par une organisation (un train, un hôtel) ; si ses propres mots déplacent ou annulent ensuite ce créneau, Lou déplace ou
-retire son blocage. Chaque changement est confirmé aussitôt, avec une annulation en un mot (niveau A3
+retire son blocage. Chaque changement est annoncé aussitôt en une ligne, et un mot (« annule ») le défait (niveau A3
 ci-dessous). Le message d'une autre personne ne suffit jamais à rien changer. Tout changement est annoncé dans l'[historique](CHANGELOG.md).
 
 ## Ce que Lou sait faire
 Généré à partir du registre des capacités de Lou : rien n'est mis en service sans une ligne ici.
-- Répond à la personne propriétaire, prépare les brouillons et le point du matin (Anthropic, Claude).
-- Tient un dossier par personne et organisation, regroupe les choses à faire en projets, sait où se trouve la personne propriétaire (Anthropic, Claude ; seulement des messages passés par la vérification).
+- Répond à la personne propriétaire et prépare les brouillons (Anthropic, Claude).
+- Sait où se trouve la personne propriétaire d'après son agenda et ses réservations (Anthropic, Claude ; seulement des messages passés par la vérification). Les dossiers et les projets sont en pause le temps que la compréhension de Lou soit refaite.
 - Vérifie chaque message pour en retirer les détails sensibles avant toute autre lecture, et permet une recherche par le sens (Mistral, UE).
 - Transcrit les messages vocaux de la personne propriétaire (Mistral, UE) ; l'audio est supprimé une fois transcrit.
 - Lit le texte des images et PDF que la personne propriétaire lui envoie (Mistral, UE), vérifié avant toute autre lecture ; le fichier est supprimé une fois lu.
@@ -31,12 +31,12 @@ Pas encore : agir sur des sites web, envoyer dans des groupes, inviter des perso
 | Rôle | Fournisseur |
 |------|-------------|
 | Vérification de confidentialité à l'arrivée : retire les détails sensibles avant que toute autre partie de Lou puisse lire un message ; recherche par le sens ; transcription des messages vocaux de la personne propriétaire, et texte des images et PDF qu'elle envoie | Mistral (UE) |
-| Conversation, rédaction, et les dossiers (où en sont les choses avec chaque personne ou organisation, ce qui reste ouvert, chaque point avec ses messages), uniquement à partir de messages que la vérification a laissés passer ; recherches sur le web et pages publiques | Anthropic (Claude) |
+| Conversation et rédaction, uniquement à partir de messages que la vérification a laissés passer ; recherches sur le web et pages publiques | Anthropic (Claude) |
 
 Les données sont stockées sur des serveurs situés dans l'UE et sur les appareils de la personne propriétaire. Les fournisseurs d'IA ne reçoivent que les extraits nécessaires à chaque tâche.
 
 ## Données
-- Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Lou garde un dossier par personne ou organisation (où en sont les choses, ce qui reste ouvert), rédigé uniquement à partir de messages vérifiés ; un point qu'aucun message ne prouve est refusé par le code.
+- Jamais conservé : des notes ou profils contenant des informations sensibles sur les autres (santé, opinions politiques, religion, orientation sexuelle, origine ethnique, etc.). Les dossiers que Lou a écrits jusqu'à la 0.2.15 (où en sont les choses avec une personne ou une organisation, ce qui reste ouvert) l'ont été uniquement à partir de messages vérifiés ; aucun n'est écrit le temps que la compréhension de Lou soit refaite.
 - Un seul contrôle à l'arrivée : les détails sensibles concernant les autres sont retirés dès qu'un message arrive, et effacés de ce qui est enregistré ; d'ici là, aucune partie de Lou ne peut le lire. Les difficultés d'argent et les numéros de compte ou de carte sont traités de la même façon, y compris ceux de la personne propriétaire ; un prix ou une somme à rembourser reste.
 - Appels : Lou sait quand la personne propriétaire a appelé quelqu'un qu'elle connaît déjà, et combien de temps, jamais ce qui s'est dit.
 - Effacement : ce que vous avez écrit disparaît, et votre nom et vos coordonnées sont remplacés par « [erased] » partout où la personne propriétaire ou Lou les ont écrits.
