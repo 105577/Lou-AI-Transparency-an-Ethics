@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.22 · 2026-11-21
+- A review of the last two days' changes found an error and four weaknesses, all fixed the same day:
+  - **The error:** an opt-out you asked for yourself could be undone by the owner in two steps (first a stricter setting, then a lift).
+    Now your own choice is always what counts: only you can lift it.
+  - **The bridge:** notes from the owner's other assistant are accepted only from the owner's own Sent mail, never from an email that
+    merely shows the owner's address as its sender (that can be forged).
+  - **Learning:** what Lou learns can't carry someone else's words: it never reads what Lou drafted or searched from other people's
+    messages, and a procedure with an email address, a link or someone's name is refused.
+  - **The owner's past sent emails:** none written to someone who opted out is read, forwarded emails are cut, and none is kept as an
+    example.
+  - **Travel times:** a place that is someone's home ("chez …") is never sent to the address service.
+
 ## 0.2.21 · 2026-11-21
 - Lou learns how to do things, like an assistant who gets better with practice: after a task that took several steps, or one the owner
   corrected, it writes a short procedure for that kind of task (when it applies, its steps, an example) and refines it after the owner's
