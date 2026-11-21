@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.18 · 2026-11-21
+- Drafts that sound like the owner, even to someone new: from the owner's own messages (only those the privacy check has passed), Lou
+  keeps a short description of how they write, per language and kind of relationship (family, friends, recruiters, work…): tu or
+  vous, length, greetings, usual turns of phrase. Style only, naming nobody. Up to three of the owner's own messages are kept, as
+  written, as examples; they are erased after 12 months, and all of them at any erasure request.
+
 ## 0.2.17 · 2026-11-21
 - One reading of each message: once the privacy check has passed a message, Lou reads it once, with the few before it in that
   conversation, to note what is to do, who owes what, and times proposed, accepted or cancelled. Each note must quote the message it
