@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.21 · 2026-11-21
+- Lou learns how to do things, like an assistant who gets better with practice: after a task that took several steps, or one the owner
+  corrected, it writes a short procedure for that kind of task (when it applies, its steps, an example) and refines it after the owner's
+  next correction. It learns only from the owner's messages, its own steps and the owner's corrections, never from what other people
+  write. A procedure can't change a permission, a privacy setting or a budget, and anything that goes to someone still needs the
+  owner's *send*. The owner sees each one, with its versions, and can retire it. Written in a test mode first, not yet followed.
+- The owner's other AI assistant (Claude, in the owner's own sessions) can send Lou notes by email, from the owner's own address. Lou
+  files them as notes about the owner, never as instructions: nothing in them can make Lou contact anyone. A note that might carry a
+  sensitive detail is left out.
+- One question a day at most: when a missing fact stops Lou from doing something (a meeting agreed with no time can't go in the
+  calendar), Lou asks the owner once. Never about a fact Lou can do without.
+
 ## 0.2.20 · 2026-11-21
 - The owner manages Lou from an app (the dashboard, on the owner's private network, unlocked with their passkey): closing or
   reopening a to-do, dropping a meeting that went nowhere, how Lou treats someone, adding an email address, what Lou remembers about
