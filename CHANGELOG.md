@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.2.17 · 2026-11-21
+- One reading of each message: once the privacy check has passed a message, Lou reads it once, with the few before it in that
+  conversation, to note what is to do, who owes what, and times proposed, accepted or cancelled. Each note must quote the message it
+  comes from. Code refuses a note no message proves, someone else closing one of the owner's own to-dos, and anything about where the
+  owner will be that doesn't come from the owner. Facts about people are not kept from this reading yet: they are measured first.
+  Nothing in it can send, pay, share or delete.
+- Before any AI, rules leave out what isn't worth reading: automated mail other than bookings, very short messages, and groups the owner
+  neither takes part in, nor is named in, nor turned on. People who chose *no content* or *ignore* are never read. Each decision is
+  logged with its rule's name, so a message left out can always be explained. At night this reading waits for the morning, except in a
+  conversation where a time is being agreed.
+- Answering the owner: a smaller Claude model now answers; the main one still writes anything that goes to someone else. Before the
+  switch, the owner's recent questions were replayed through it, with nothing sent or changed, and the answers compared with the ones
+  given at the time, by the reviewer the owner allowed. Those replayed answers are kept encrypted for 12 months.
+- Lou does what its tools can do and then says what it did, instead of asking first. Sending anything on the owner's behalf still needs
+  exactly the word *send*.
+
 ## 0.2.16 · 2026-11-20
 - Lou does less in the background, on purpose, while its understanding is rebuilt: no more case files, morning brief, heads-ups, project
   proposals or after-meeting questions. Reminders, meeting reminders, the privacy check, search and the owner's calendar work as before.

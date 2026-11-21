@@ -1,6 +1,6 @@
 # Lou card
 
-**Version 0.2.16 · 2026-11-20 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
+**Version 0.2.17 · 2026-11-21 · Status: in early use by its owner.** Lou reads its owner's messages, email and calendar, and sends messages and emails only after its owner approves each one.
 
 ## Purpose & limits
 A personal assistant: it tracks commitments, prepares replies and meetings, and keeps context about its owner's plans and network.
@@ -15,8 +15,8 @@ change to this is announced in the [changelog](CHANGELOG.md).
 
 ## What Lou can do
 Generated from Lou's capability registry: nothing ships without a line here.
-- Answers the owner and prepares drafts (Anthropic, Claude).
-- Works out where the owner is from their calendar and bookings (Anthropic, Claude; only messages the privacy check has passed). Case files and projects are paused while Lou's understanding is rebuilt.
+- Answers the owner and prepares drafts (Anthropic, Claude: a smaller model answers, the main one writes what goes to someone else).
+- Reads each message once the privacy check has passed it, to note to-dos, who owes what and times proposed or agreed, each with the message that proves it; where the owner will be comes only from their own words, calendar and bookings (Anthropic, Claude). Case files and projects are paused while Lou's understanding is rebuilt.
 - Checks every message for sensitive details before anything else reads it, and makes search understand meaning (Mistral, EU).
 - Turns the owner's voice notes into text (Mistral, EU); the audio is deleted once heard.
 - Reads the text of images and PDFs the owner sends it (Mistral, EU), checked for sensitive details before anything else reads it; the file is deleted once read.
@@ -30,7 +30,7 @@ Not built: acting on websites, sending in group chats, inviting people to events
 | Role | Provider |
 |------|----------|
 | Privacy check at arrival: removes sensitive details before any other part of Lou can read a message; search by meaning; the owner's voice notes to text, and the text of images and PDFs the owner sends | Mistral (EU) |
-| Conversation and drafting, only from messages the privacy check has passed; web searches and public pages | Anthropic (Claude) |
+| Reading each message once for to-dos and times, answering the owner (a smaller model) and drafting (the main one), only from messages the privacy check has passed; web searches and public pages | Anthropic (Claude) |
 
 Data is stored on servers in the EU and on the owner's own devices. AI providers receive only the excerpts needed for a given task.
 

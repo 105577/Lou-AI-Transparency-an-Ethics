@@ -43,6 +43,8 @@ Only what reaches the owner, with the owner's permission:
 | The owner's preferences about dealing with you (for example "always in French") | So Lou follows how the owner likes things | Encrypted; only from the owner, never from your messages; they can never give Lou a permission; erased with your data on request |
 | A log of every change to what Lou knows (what changed, from where, by whom) | So each change can be explained and undone | Encrypted; can't be rewritten; its content is erased after 12 months, or with your data on request |
 | Short facts Lou learns, about you or the owner (where you work, a preference, a plan), each with where it came from; and what was to do between you and the owner, and how it ended | So Lou remembers what matters and doesn't raise the same thing twice | Encrypted; never sensitive information; facts learned from your messages are listed to the owner, who can correct or remove them; erased after 12 months, or with your data on request |
+| The times proposed, accepted or cancelled between you and the owner, each with the message it comes from; and the log of that reading (what it noted or refused, quoting your words) | So Lou knows where a meeting stands, and every note can be explained | Encrypted; a time counts as agreed only once both sides have said yes; your cancellation alone never removes it from the owner's calendar; erased after 12 months, or with your data on request |
+| Answers a new version of Lou would have given to the owner's recent questions, next to the ones it gave | To check a new version before it answers for real (nothing is sent or changed) | Encrypted; read only by the owner and, with their consent, the reviewer; erased after 12 months, and all of them at any erasure request |
 | A search index of what Lou keeps: fingerprints of words, and "meaning" vectors | So the owner can find anything by asking ("what did Clara say about the deck?") | Built only from text with sensitive details removed; words stored as keyed fingerprints, never as words; vectors encrypted; nothing from people who opted out; erased with the content |
 | Messages Lou drafted, whether the owner approved them, and whether they were sent | Accountability: every message has a record | Encrypted, with a tamper-evident fingerprint |
 | An activity log: what happened and when (ids, times, statuses, costs) | Audits: anything Lou did can be traced | **Contains no message content.** Cannot be altered or deleted, even by Lou |
@@ -69,8 +71,12 @@ Only what reaches the owner, with the owner's permission:
   - **Anthropic** (Claude), a company based in the **United States**, prepares answers and drafts. It wrote the case files (where things
     stand with each person or organisation, what is open, each point with its messages); since 0.2.16 none are written while Lou's
     understanding is rebuilt, and those already written stay until erased like the rest. When the owner writes in a conversation (a group
-    included), it reads that message with the few before it, to notice a time the owner agreed to and put it in the owner's calendar. It reads messages **only once the privacy check
-    has passed them**, never before. Under its commercial terms, this data is not used to train its models.
+    included), it reads that message with the few before it, to notice a time the owner agreed to and put it in the owner's calendar. Since 0.2.17 it also reads each message once, with the few
+    before it, to note what is to do, who owes what, and times proposed, accepted or cancelled: each note must quote the message it comes
+    from, and code refuses the rest. Rules without any AI first leave out what isn't worth reading (automated mail other than bookings,
+    very short messages, groups the owner neither takes part in, nor is named in, nor turned on), and never read anyone who opted out. A
+    smaller Claude model does this reading and answers the owner; the main one writes what goes to someone else. It reads messages **only
+    once the privacy check has passed them**, never before. Under its commercial terms, this data is not used to train its models.
 - **A reviewer, only with the owner's consent:** to check Lou's quality, the owner can let a reviewer (an AI assistant working for the
   owner, Claude by Anthropic) read Lou's logs for a few days at most (31), and withdraw it at any moment. It sees what Lou sees once the
   privacy check has passed a message, never more: what the check removed stays removed, and phone numbers and email addresses are
