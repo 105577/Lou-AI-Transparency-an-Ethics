@@ -1,6 +1,6 @@
 # Fiche Lou
 
-**Version 0.2.18 · 2026-11-21 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
+**Version 0.2.19 · 2026-11-21 · Statut : premiers usages par la personne propriétaire.** Lou lit ses messages, e-mails et agenda, et n'envoie messages et e-mails qu'après validation de chacun.
 
 ## Rôle & limites
 Une assistante personnelle : elle suit les engagements, prépare des réponses et des réunions, et garde le contexte des projets et du réseau de la personne qui l'utilise.
@@ -18,6 +18,7 @@ ci-dessous). Le message d'une autre personne ne suffit jamais à rien changer. T
 Généré à partir du registre des capacités de Lou : rien n'est mis en service sans une ligne ici.
 - Répond à la personne propriétaire et prépare les brouillons (Anthropic, Claude : un modèle plus petit répond, le principal écrit ce qui part vers quelqu'un d'autre).
 - Lit chaque message une fois passé par la vérification, pour noter les choses à faire, qui doit quoi et les créneaux proposés ou acceptés, chaque fois avec le message qui le prouve ; où sera la personne propriétaire ne vient que de ses propres mots, de son agenda et de ses réservations (Anthropic, Claude). Les dossiers et les projets sont en pause le temps que la compréhension de Lou soit refaite.
+- Calcule le temps de trajet en transports en commun jusqu'à un rendez-vous en personne (Île-de-France Mobilités et le service national d'adresses, IGN) ; seuls les deux lieux du trajet sont envoyés, jamais avec qui est le rendez-vous.
 - Vérifie chaque message pour en retirer les détails sensibles avant toute autre lecture, et permet une recherche par le sens (Mistral, UE).
 - Transcrit les messages vocaux de la personne propriétaire (Mistral, UE) ; l'audio est supprimé une fois transcrit.
 - Lit le texte des images et PDF que la personne propriétaire lui envoie (Mistral, UE), vérifié avant toute autre lecture ; le fichier est supprimé une fois lu.

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.19 · 2026-11-21
+- Real travel times: around an in-person meeting, the time to get there by public transport instead of a fixed 45 minutes, from
+  Île-de-France Mobilités, with addresses placed by the national address service (IGN). Only the two places of the trip are sent,
+  never who the meeting is with. When the service can't answer, the 45 minutes stay.
+- How the owner writes emails: once, Lou reads the owner's own words in past sent emails (up to 400, the last 3 years; quoted
+  messages cut, recipients not kept), each through the privacy check first, to learn the owner's email style. The emails are deleted
+  within days, once read; only the style description and a few examples stay, as in 0.2.18.
+
 ## 0.2.18 · 2026-11-21
 - Drafts that sound like the owner, even to someone new: from the owner's own messages (only those the privacy check has passed), Lou
   keeps a short description of how they write, per language and kind of relationship (family, friends, recruiters, work…): tu or
