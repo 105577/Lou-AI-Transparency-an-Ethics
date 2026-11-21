@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.20 · 2026-11-21
+- The owner manages Lou from an app (the dashboard, on the owner's private network, unlocked with their passkey): closing or
+  reopening a to-do, dropping a meeting that went nowhere, how Lou treats someone, adding an email address, what Lou remembers about
+  the owner. Each change is logged and follows the same rules as when the owner tells Lou: an opt-out you asked for yourself can only be
+  lifted by you.
+- The owner's corrections: the owner can mark one of Lou's answers as wrong and say what Lou should have done. The words are encrypted,
+  erased after 12 months, and all of them at any erasure request.
+- The owner's LinkedIn connections file: for people Lou already knows (matched by email address), their company and position. As with
+  the owner's contacts file, nobody new is added, and nothing is added for someone who opted out.
+
 ## 0.2.19 · 2026-11-21
 - Real travel times: around an in-person meeting, the time to get there by public transport instead of a fixed 45 minutes, from
   Île-de-France Mobilités, with addresses placed by the national address service (IGN). Only the two places of the trip are sent,
