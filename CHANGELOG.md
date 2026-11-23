@@ -1,6 +1,13 @@
 # Changelog
 
 ## 0.2.23 · 2026-11-23
+- Bookings in the calendar again: a train or a flight the owner books (from the company's own email) goes into the owner's calendar, one
+  block per leg, as 0.2.13 said. Since 0.2.16 it no longer did; this fixes it. Never from someone else's message about their trip.
+- LinkedIn, for the owner's job search: once a week the owner's assistant (Claude, in the owner's own browser) lists whom the owner
+  invited and who accepted, and sends it to Lou. Lou keeps each name with the headline and company LinkedIn shows, never as a new
+  person, and nothing for someone who asked not to be read. Nothing reads LinkedIn automatically from Lou's side.
+
+## 0.2.23 · 2026-11-23
 - The owner's app was rebuilt: what Lou is doing (what it read, what it skipped and why, what it cost), who is under a restriction,
   and how each group is read, all managed in one place. Each change still needs the owner's passkey, is logged, and follows the same
   rules as before: an opt-out you asked for yourself can only be lifted by you.
