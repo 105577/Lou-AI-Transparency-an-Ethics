@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.23 · 2026-11-23
+## 0.2.24 · 2026-11-23
 - Bookings in the calendar again: a train or a flight the owner books (from the company's own email) goes into the owner's calendar, one
   block per leg, as 0.2.13 said. Since 0.2.16 it no longer did; this fixes it. Never from someone else's message about their trip.
 - LinkedIn, for the owner's job search: once a week the owner's assistant (Claude, in the owner's own browser) lists whom the owner
