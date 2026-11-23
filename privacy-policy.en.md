@@ -1,6 +1,6 @@
 # Privacy policy
 
-[Français](privacy-policy.fr.md) · Version 0.2.14 · 2026-11-17
+[Français](privacy-policy.fr.md) · Version 0.2.23 · 2026-11-23
 
 Lou is the personal AI assistant of one private individual, published here under the pseudonym **115** ("the owner").
 This page says, plainly, what Lou reads, what it keeps, where, for how long, who else sees it, and how you can limit or erase it.
@@ -17,6 +17,10 @@ Only what reaches the owner, with the owner's permission:
 
 - **The owner's conversations** on their messaging apps (for example WhatsApp, LinkedIn, Instagram, Messenger, iMessage), read through an app
   running on the owner's own computer. Read-only, except for messages the owner has approved one by one.
+- **Group conversations** the owner is in are read only while the owner takes part: for 48 hours after the owner writes in the group or
+  is named in it, unless the owner has set that group to be read always. The owner can also set a group to never read: Lou then takes
+  no notes from it (no to-dos, no times), though its messages stay stored and searchable, like the rest. Your own choice (see *Your
+  choices*) applies in every group too.
 - **The owner's email**: for each email, the sender, recipients, date, subject, its text and its technical identifier.
   **Attachments are never opened.**
 - **The owner's calendar**: event titles, times, places and the number of attendees.

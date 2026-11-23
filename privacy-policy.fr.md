@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-[English](privacy-policy.en.md) · Version 0.2.14 · 2026-11-17
+[English](privacy-policy.en.md) · Version 0.2.23 · 2026-11-23
 
 Lou est l'assistante IA personnelle d'une personne, publiée ici sous le pseudonyme **115** (« la personne propriétaire »).
 Cette page dit simplement ce que Lou lit, ce qu'elle conserve, où, combien de temps, qui d'autre y a accès, et comment vous pouvez le limiter ou l'effacer.
@@ -19,6 +19,10 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 
 - **Les conversations de la personne propriétaire** sur ses messageries (par exemple WhatsApp, LinkedIn, Instagram, Messenger, iMessage), lues par une application
   installée sur l'ordinateur de la personne propriétaire. En lecture seule, sauf pour les messages que la personne propriétaire a approuvés un par un.
+- **Les groupes dont fait partie la personne propriétaire** ne sont lus que lorsqu'elle y participe : pendant 48 heures après qu'elle y a
+  écrit ou y a été nommée, sauf si elle a réglé ce groupe pour qu'il soit toujours lu. Elle peut aussi régler un groupe sur « jamais lu » :
+  Lou n'en tire alors aucune note (ni tâche, ni créneau), mais ses messages restent conservés et consultables par recherche, comme le
+  reste. Votre propre choix (voir *Vos choix*) s'applique aussi dans chaque groupe.
 - **Les e-mails de la personne propriétaire** : pour chaque e-mail, l'expéditeur, les destinataires, la date, l'objet, son texte et son identifiant technique.
   **Les pièces jointes ne sont jamais ouvertes.**
 - **L'agenda de la personne propriétaire** : titres, horaires, lieux et nombre de participants des événements.

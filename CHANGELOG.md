@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.23 · 2026-11-23
+- The owner's app was rebuilt: what Lou is doing (what it read, what it skipped and why, what it cost), who is under a restriction,
+  and how each group is read, all managed in one place. Each change still needs the owner's passkey, is logged, and follows the same
+  rules as before: an opt-out you asked for yourself can only be lifted by you.
+- Groups: the owner can set each group to be read always, only while the owner takes part (the default: 48 hours after the owner
+  writes in it or is named), or never. A group set to never read gives Lou no notes (no to-dos, no times); its messages stay stored
+  and searchable. The privacy policy now says how groups are read, in its own line.
+
 ## 0.2.22 · 2026-11-21
 - A review of the last two days' changes found an error and four weaknesses, all fixed the same day:
   - **The error:** an opt-out you asked for yourself could be undone by the owner in two steps (first a stricter setting, then a lift).
