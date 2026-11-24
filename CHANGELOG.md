@@ -6,13 +6,15 @@
 - A train booked without its times in the email: Lou finds them in SNCF's public timetable. Lou downloads the whole timetable and
   searches it on the owner's devices, so no one learns which train the owner takes. If several trains fit, Lou asks the owner.
 - If you give the owner your phone number or email address in a message, Lou adds it to how it recognises you. Never a number
-  someone else gives about you.
+  someone else gives about you, and a number from a message never makes two people one: if Lou already knows it as someone else's,
+  it is left alone.
 - Something to bring to a meeting ("bring an ID") becomes a reminder for the owner before leaving.
 - Groups are read for 7 days after the owner writes in them (it was 48 hours), so a question asked a few days later is not missed.
   The owner's own reply in a group is linked to the person they answered.
 - A to-do that needs someone ("ask Paul") is said to the owner when they are together, from the owner's own message or a meeting
   with them. Lou keeps only that link (who, when), never your words.
-- The owner can teach Lou how to do a kind of task, in their own words; Lou follows it from then on. Twice a day, Lou names questions
+- The owner can teach Lou how to do a kind of task, in their own words; Lou follows it from then on. Never from what other people
+  write: Lou doesn't keep one in an answer where it read someone else's message. Twice a day, Lou names questions
   the owner hasn't answered yet; and when someone proposes a time, Lou tells the owner whether they're free and offers a reply. Any
   reply still needs the owner's *send*.
 
