@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.2.27 · 2026-11-24
+- **Groups are read**, like the owner's other conversations: a dinner agreed in a group was missed because Lou only read a group for a
+  few days after the owner wrote there. Not read: groups the owner set to never read, and groups the owner muted or archived in their
+  app, unless a message names the owner. The privacy policy says so in its group line.
+- **Lou's own agenda**, beside the owner's calendar and never added to it: a reminder or a question for the owner, sent once at a
+  time, the next time the owner is with someone ("ask Paul whether he can drive"), or before or after a meeting; and where the owner
+  will be, from their own words. Its text is deleted after 12 months, and an erasure reaches it like the rest.
+- **The bridge** (notes from the owner's other assistant, accepted only from the owner's own Sent mail): such a note is now handled as
+  a message from the owner, under the same rules: anything that would go to someone still waits for the owner's "send". These notes
+  had been dropped by mistake since the start; nothing else was affected.
+- One person on several apps is one person again: records with the same full name, or the same phone number on two apps, are linked
+  every hour. The owner can always separate two people Lou linked.
+- A meeting that was moved or updated is no longer reported to the owner as clashing with itself.
+- Lou tells the owner when it hasn't been able to update itself for 20 minutes, with what to do.
+
 ## 0.2.26 · 2026-11-24
 - A booking from a company's email (a train, a flight) goes into the owner's calendar only when the owner's email provider confirmed
   the email really comes from that company's address. An email that only pretends to be from a company adds nothing.

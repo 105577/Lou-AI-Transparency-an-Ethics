@@ -17,8 +17,9 @@ Only what reaches the owner, with the owner's permission:
 
 - **The owner's conversations** on their messaging apps (for example WhatsApp, LinkedIn, Instagram, Messenger, iMessage), read through an app
   running on the owner's own computer. Read-only, except for messages the owner has approved one by one.
-- **Group conversations** the owner is in are read only while the owner takes part: for 7 days after the owner writes in the group, or
-  when a message names the owner, unless the owner has set that group to be read always. The owner can also set a group to never read: Lou then takes
+- **Group conversations** the owner is in are read, like the owner's other conversations, so that a plan made in a group (a dinner, a
+  meeting point) is not missed. A group the owner has muted or archived in their app is read only when a message names the owner, unless
+  the owner has set it to be read always. The owner can also set a group to never read: Lou then takes
   no notes from it (no to-dos, no times), though its messages stay stored and searchable, like the rest. Your own choice (see *Your
   choices*) applies in every group too.
 - **The owner's email**: for each email, the sender, recipients, date, subject, its text and its technical identifier.
@@ -54,6 +55,7 @@ Only what reaches the owner, with the owner's permission:
 | Procedures Lou learned: reusable ways of doing a kind of task (when it applies, its steps, an example), written from the owner's messages, Lou's own steps and the owner's corrections, or dictated by the owner | So Lou does a task the way the owner wants it, the next time too | Never from what you write; the steps describe a kind of task, without names; each change is a new version the owner can see and retire; the example (it may name someone) is erased after 12 months, and all of them at any erasure request |
 | If you are connected with the owner on LinkedIn, or the owner invited you: your name, your headline and company as LinkedIn shows them, and when | So the owner can follow their job search (who they reached out to, who accepted, at which companies) | From a weekly report the owner makes in their own browser; never added as a new person in Lou; nothing kept if you asked not to be read; encrypted; erased after 12 months, and all of it at any erasure request |
 | That something the owner has to do needs you ("ask Paul"), and that the owner is with you, from the owner's own message or a meeting with you | So Lou can remind the owner of it while you are together | Links only (who, when), no words; never from your messages |
+| A reminder or a question in Lou's own agenda for the next time the owner is with you ("ask Paul whether he can drive") | So Lou asks the owner at the right moment | Its few words, encrypted; never added to the owner's calendar; deleted after 12 months |
 | A search index of what Lou keeps: fingerprints of words, and "meaning" vectors | So the owner can find anything by asking ("what did Clara say about the deck?") | Built only from text with sensitive details removed; words stored as keyed fingerprints, never as words; vectors encrypted; nothing from people who opted out; erased with the content |
 | Messages Lou drafted, whether the owner approved them, and whether they were sent | Accountability: every message has a record | Encrypted, with a tamper-evident fingerprint |
 | An activity log: what happened and when (ids, times, statuses, costs) | Audits: anything Lou did can be traced | **Contains no message content.** Cannot be altered or deleted, even by Lou |
@@ -83,7 +85,7 @@ Only what reaches the owner, with the owner's permission:
     included), it reads that message with the few before it, to notice a time the owner agreed to and put it in the owner's calendar. Since 0.2.17 it also reads each message once, with the few
     before it, to note what is to do, who owes what, and times proposed, accepted or cancelled: each note must quote the message it comes
     from, and code refuses the rest. Rules without any AI first leave out what isn't worth reading (automated mail other than bookings,
-    very short messages, groups the owner neither takes part in, nor is named in, nor turned on), and never read anyone who opted out. A
+    very short messages, groups the owner set to never read, and groups the owner muted that don't name them), and never read anyone who opted out. A
     smaller Claude model does this reading and answers the owner; the main one writes what goes to someone else. It reads messages **only
     once the privacy check has passed them**, never before. Under its commercial terms, this data is not used to train its models.
 - **A reviewer, only with the owner's consent:** to check Lou's quality, the owner can let a reviewer (an AI assistant working for the
@@ -144,7 +146,7 @@ it as a request and tells the owner at once. The owner handles each request pers
 requests within 30 days. Each request is registered with its deadline and followed until it is answered. An erasure is prepared by Lou
 and runs only once the owner has approved it; it removes the text of your messages, your name and your contact details, and keeps only a
 record that messages existed and when, with your contact details as unreadable fingerprints so that your choices keep applying. Wherever the
-owner or Lou wrote your name or contact details (the owner's own messages to Lou, reminders, to-dos, Lou's logs), they are replaced by
+owner or Lou wrote your name or contact details (the owner's own messages to Lou, reminders, Lou's own agenda, to-dos, Lou's logs), they are replaced by
 "[erased]": the records stay, without you in them.
 
 If you live in the EU, you also have the rights given by the GDPR, including complaining to your data protection authority.

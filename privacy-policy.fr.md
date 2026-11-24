@@ -19,8 +19,9 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 
 - **Les conversations de la personne propriétaire** sur ses messageries (par exemple WhatsApp, LinkedIn, Instagram, Messenger, iMessage), lues par une application
   installée sur l'ordinateur de la personne propriétaire. En lecture seule, sauf pour les messages que la personne propriétaire a approuvés un par un.
-- **Les groupes dont fait partie la personne propriétaire** ne sont lus que lorsqu'elle y participe : pendant 7 jours après qu'elle y a
-  écrit, ou quand un message la nomme, sauf si elle a réglé ce groupe pour qu'il soit toujours lu. Elle peut aussi régler un groupe sur « jamais lu » :
+- **Les groupes dont fait partie la personne propriétaire** sont lus, comme ses autres conversations, pour qu'un projet décidé dans un
+  groupe (un dîner, un lieu de rendez-vous) ne soit pas manqué. Un groupe qu'elle a mis en sourdine ou archivé dans son application n'est
+  lu que quand un message la nomme, sauf si elle l'a réglé pour qu'il soit toujours lu. Elle peut aussi régler un groupe sur « jamais lu » :
   Lou n'en tire alors aucune note (ni tâche, ni créneau), mais ses messages restent conservés et consultables par recherche, comme le
   reste. Votre propre choix (voir *Vos choix*) s'applique aussi dans chaque groupe.
 - **Les e-mails de la personne propriétaire** : pour chaque e-mail, l'expéditeur, les destinataires, la date, l'objet, son texte et son identifiant technique.
@@ -57,6 +58,7 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
 | Les façons de faire que Lou a apprises : comment traiter un type de tâche (quand cela s'applique, les étapes, un exemple), écrites à partir des messages de la personne propriétaire, des étapes de Lou et de ses corrections, ou dictées par la personne propriétaire | Pour que Lou fasse une tâche comme la personne propriétaire le veut, la fois suivante aussi | Jamais à partir de ce que vous écrivez ; les étapes décrivent un type de tâche, sans nom ; chaque changement est une nouvelle version que la personne propriétaire voit et peut retirer ; l'exemple (il peut nommer quelqu'un) est effacé après 12 mois, et tous à chaque demande d'effacement |
 | Si vous êtes en relation avec la personne propriétaire sur LinkedIn, ou qu'elle vous a invité : votre nom, votre titre et votre entreprise tels que LinkedIn les montre, et quand | Pour que la personne propriétaire suive sa recherche d'emploi (qui elle a contacté, qui a accepté, dans quelles entreprises) | À partir d'un relevé hebdomadaire qu'elle fait dans son propre navigateur ; jamais ajouté comme nouvelle personne dans Lou ; rien n'est gardé si vous avez demandé à ne pas être lu ; chiffré ; effacé après 12 mois, et entièrement à chaque demande d'effacement |
 | Qu'une chose que la personne propriétaire doit faire passe par vous (« demander à Paul »), et qu'elle est avec vous, d'après son propre message ou un rendez-vous avec vous | Pour que Lou le lui rappelle pendant que vous êtes ensemble | Des liens seulement (qui, quand), aucun mot ; jamais d'après vos messages |
+| Un rappel ou une question dans l'agenda de Lou pour la prochaine fois que la personne propriétaire est avec vous (« demander à Paul s'il peut conduire ») | Pour que Lou lui pose la question au bon moment | Ses quelques mots, chiffrés ; jamais ajoutés à l'agenda de la personne propriétaire ; supprimés après 12 mois |
 | Un index de recherche de ce que Lou conserve : des empreintes de mots et des vecteurs de « sens » | Permettre à la personne propriétaire de tout retrouver en demandant (« qu'a dit Clara sur la présentation ? ») | Construit uniquement à partir de textes débarrassés des détails sensibles ; les mots sont enregistrés sous forme d'empreintes à clé, jamais en clair ; vecteurs chiffrés ; rien des personnes qui ont refusé ; effacé avec le contenu |
 | Les messages rédigés par Lou, leur approbation par la personne propriétaire et leur envoi | Responsabilité : chaque message a une trace | Chiffrés, avec une empreinte qui révèle toute modification |
 | Un journal d'activité : ce qui s'est passé et quand (identifiants, horaires, statuts, coûts) | Audits : tout ce que Lou a fait peut être retracé | **Ne contient aucun contenu de message.** Ne peut être ni modifié ni effacé, pas même par Lou |
@@ -90,7 +92,7 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
     dans son agenda. Depuis la 0.2.17, elle lit aussi chaque message une fois, avec les quelques précédents, pour noter ce qui est à faire,
     qui doit quoi, et les créneaux proposés, acceptés ou annulés : chaque note doit citer le message dont elle vient, et le code refuse le
     reste. Des règles, sans aucune IA, écartent d'abord ce qui ne vaut pas la lecture (les e-mails automatiques autres que les réservations,
-    les messages très courts, les groupes où la personne propriétaire n'écrit pas, n'est pas nommée et qu'elle n'a pas activés), et ne
+    les messages très courts, les groupes réglés sur « jamais lu », et les groupes en sourdine qui ne la nomment pas), et ne
     lisent jamais les personnes qui se sont retirées. Un modèle Claude plus petit fait cette lecture et répond à la personne propriétaire ;
     le principal écrit ce qui part vers quelqu'un d'autre. Elle ne lit un message **qu'une fois que la
     vérification de confidentialité l'a laissé passer**, jamais avant. Selon ses conditions commerciales, ces données ne servent pas à entraîner
@@ -156,7 +158,7 @@ les refus immédiatement, les autres demandes sous 30 jours. Chaque demande est 
 Un effacement est préparé par Lou et ne s'exécute qu'une fois approuvé par la personne propriétaire ; il supprime le texte de vos messages,
 votre nom et vos coordonnées, et ne garde qu'une trace : que des messages ont existé, et quand, avec vos coordonnées sous forme d'empreintes
 illisibles, pour que vos choix continuent de s'appliquer. Partout où la personne propriétaire ou Lou ont écrit votre nom ou vos coordonnées (les
-propres messages de la personne propriétaire à Lou, ses rappels, ses choses à faire, les journaux de Lou), ils sont remplacés par « [erased] » :
+propres messages de la personne propriétaire à Lou, ses rappels, l'agenda de Lou, ses choses à faire, les journaux de Lou), ils sont remplacés par « [erased] » :
 les traces restent, sans vous.
 
 Si vous résidez dans l'UE, vous disposez aussi des droits prévus par le RGPD, dont celui de saisir l'autorité de protection des données (en France, la CNIL).
