@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.26 · 2026-11-24
+- A booking from a company's email (a train, a flight) goes into the owner's calendar only when the owner's email provider confirmed
+  the email really comes from that company's address. An email that only pretends to be from a company adds nothing.
+- When a company's email gives a train's number and its departure time but not its arrival, Lou finds the arrival in the public
+  timetable, still searched on the owner's devices.
+
 ## 0.2.25 · 2026-11-24
 - The owner's calendar, done by Lou: a meeting agreed in a conversation now goes into the owner's calendar by itself (it was in a test
   mode). A dinner agreed for a day with no time blocks the evening; a lunch, the middle of the day.
