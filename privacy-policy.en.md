@@ -68,6 +68,8 @@ Only what reaches the owner, with the owner's permission:
   has passed a message, no part of Lou can read it; when the check can't run, the message waits, unread, and is checked again later. This
   includes **money trouble**, the owner's too (an overdraft, a debt, a loss, a collection) and bank or card numbers, replaced by
   "[financial detail]"; a price or an amount to pay or reimburse is not sensitive and stays;
+- **one-time codes** (a login, verification or confirmation code): removed by code before anything is stored, even encrypted, and
+  replaced by "[code removed]". A code someone gives the owner to get in somewhere (a door, a gate, a building) is kept;
 - voice recordings, once transcribed;
 - anything from people who chose the **no content** or **ignore** level (see below): their messages are dropped before they are stored.
 

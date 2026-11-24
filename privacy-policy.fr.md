@@ -73,6 +73,9 @@ Uniquement ce qui parvient à la personne propriétaire, avec son autorisation :
   lieu, le message attend, sans être lu, et il est vérifié de nouveau plus tard. Cela inclut les **difficultés d'argent**, y compris celles de la
   personne propriétaire (un découvert, une dette, une perte, un recouvrement) et les numéros de compte ou de carte, remplacés par
   « [information financière] » ; un prix ou une somme à payer ou à rembourser n'est pas sensible et reste ;
+- **les codes à usage unique** (code de connexion, de vérification ou de confirmation) : retirés par le code avant tout enregistrement, même
+  chiffré, et remplacés par « [code removed] ». Un code qu'on donne à la personne propriétaire pour entrer quelque part (une porte, un portail,
+  un immeuble) est conservé ;
 - les enregistrements vocaux, une fois transcrits ;
 - quoi que ce soit venant des personnes ayant choisi le niveau **aucun contenu** ou **ignorer** (voir plus bas) : leurs messages sont écartés avant d'être enregistrés.
 

@@ -18,7 +18,7 @@ ci-dessous). Le message d'une autre personne ne suffit jamais à rien changer. T
 Généré à partir du registre des capacités de Lou : rien n'est mis en service sans une ligne ici.
 - Répond à la personne propriétaire et prépare les brouillons (Anthropic, Claude : un modèle plus petit répond, le principal écrit ce qui part vers quelqu'un d'autre).
 - Lit chaque message une fois passé par la vérification, pour noter les choses à faire, qui doit quoi et les créneaux proposés ou acceptés, chaque fois avec le message qui le prouve ; où sera la personne propriétaire ne vient que de ses propres mots, de son agenda et de ses réservations (Anthropic, Claude). Les dossiers et les projets sont en pause le temps que la compréhension de Lou soit refaite.
-- Calcule le temps de trajet en transports en commun jusqu'à un rendez-vous en personne (Île-de-France Mobilités et le service national d'adresses, IGN) ; seuls les deux lieux du trajet sont envoyés, jamais avec qui est le rendez-vous.
+- Calcule le temps de trajet en transports en commun jusqu'à un rendez-vous en personne (Île-de-France Mobilités et le service national d'adresses, IGN) ; seuls les deux lieux du trajet sont envoyés, jamais avec qui est le rendez-vous. Un lien de carte envoyé par quelqu'un est lu d'après son adresse seule (un lien court : sa seule redirection, jamais la page).
 - Vérifie chaque message pour en retirer les détails sensibles avant toute autre lecture, et permet une recherche par le sens (Mistral, UE).
 - Transcrit les messages vocaux de la personne propriétaire (Mistral, UE) ; l'audio est supprimé une fois transcrit.
 - Lit le texte des images et PDF que la personne propriétaire lui envoie (Mistral, UE), vérifié avant toute autre lecture ; le fichier est supprimé une fois lu.

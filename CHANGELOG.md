@@ -14,6 +14,13 @@
   every hour. The owner can always separate two people Lou linked.
 - A meeting that was moved or updated is no longer reported to the owner as clashing with itself.
 - Lou tells the owner when it hasn't been able to update itself for 20 minutes, with what to do.
+- **One-time codes are never kept**, not even encrypted: a login, verification or confirmation code is removed before anything is
+  stored. A code to get in somewhere (a door, a gate) stays, since the owner needs it. Codes stored before this change were removed.
+- The owner's app can **merge** several lines that are one person, with an undo.
+- Messages that reach Lou days late (from a device that was asleep) are still read.
+- Something the owner is asked to bring and has to buy (a dessert, wine) gets time to buy it on the way, and Lou asks where a meeting
+  is when it doesn't know. A map link someone sends is read from its address alone, never by loading the page.
+- Lou's messages to the owner are shorter, and a reminder about a platform's own notices ("did you just log in?") is never sent.
 
 ## 0.2.26 · 2026-11-24
 - A booking from a company's email (a train, a flight) goes into the owner's calendar only when the owner's email provider confirmed

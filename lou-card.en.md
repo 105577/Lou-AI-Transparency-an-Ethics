@@ -17,7 +17,7 @@ change to this is announced in the [changelog](CHANGELOG.md).
 Generated from Lou's capability registry: nothing ships without a line here.
 - Answers the owner and prepares drafts (Anthropic, Claude: a smaller model answers, the main one writes what goes to someone else).
 - Reads each message once the privacy check has passed it, to note to-dos, who owes what and times proposed or agreed, each with the message that proves it; where the owner will be comes only from their own words, calendar and bookings (Anthropic, Claude). Case files and projects are paused while Lou's understanding is rebuilt.
-- Works out travel time to an in-person meeting by public transport (Île-de-France Mobilités and the national address service, IGN); only the two places of the trip are sent, never who the meeting is with.
+- Works out travel time to an in-person meeting by public transport (Île-de-France Mobilités and the national address service, IGN); only the two places of the trip are sent, never who the meeting is with. A map link someone sends is read from its address alone (a short link: its redirect only, never the page).
 - Checks every message for sensitive details before anything else reads it, and makes search understand meaning (Mistral, EU).
 - Turns the owner's voice notes into text (Mistral, EU); the audio is deleted once heard.
 - Reads the text of images and PDFs the owner sends it (Mistral, EU), checked for sensitive details before anything else reads it; the file is deleted once read.
