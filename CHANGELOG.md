@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.2.25 · 2026-11-24
+- The owner's calendar, done by Lou: a meeting agreed in a conversation now goes into the owner's calendar by itself (it was in a test
+  mode). A dinner agreed for a day with no time blocks the evening; a lunch, the middle of the day.
+- A train booked without its times in the email: Lou finds them in SNCF's public timetable. Lou downloads the whole timetable and
+  searches it on the owner's devices, so no one learns which train the owner takes. If several trains fit, Lou asks the owner.
+- If you give the owner your phone number or email address in a message, Lou adds it to how it recognises you. Never a number
+  someone else gives about you.
+- Something to bring to a meeting ("bring an ID") becomes a reminder for the owner before leaving.
+- Groups are read for 7 days after the owner writes in them (it was 48 hours), so a question asked a few days later is not missed.
+  The owner's own reply in a group is linked to the person they answered.
+- A to-do that needs someone ("ask Paul") is said to the owner when they are together, from the owner's own message or a meeting
+  with them. Lou keeps only that link (who, when), never your words.
+- The owner can teach Lou how to do a kind of task, in their own words; Lou follows it from then on. Twice a day, Lou names questions
+  the owner hasn't answered yet; and when someone proposes a time, Lou tells the owner whether they're free and offers a reply. Any
+  reply still needs the owner's *send*.
+
 ## 0.2.24 · 2026-11-23
 - Bookings in the calendar again: a train or a flight the owner books (from the company's own email) goes into the owner's calendar, one
   block per leg, as 0.2.13 said. Since 0.2.16 it no longer did; this fixes it. Never from someone else's message about their trip.
